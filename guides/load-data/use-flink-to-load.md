@@ -216,15 +216,11 @@ INSERT OVERWRITE flink_to_relyt SELECT * FROM flink_source;
 INSERT OVERWRITE flink_to_relyt PARTITION (id=<value>) SELECT * FROM flink_source;
 ```
 
-> [!WARNING]  
->
-> `INSERT OVERWRITE` 的使用限制
+> `INSERT OVERWRITE` 的使用限制：
 >
 > - 只能用于处理 Flink 批任务。
 > - Flink 表中的分区列必须和 Relyt 表中的聚簇键相匹配。
 > - 支持的分区列类型包括 `CHAR`、`VARCHAR`、`TINYINT`、`SMALLINT`、`INTEGER`、`DATE`。关于 Flink 数据类型和 Relyt 数据类型对应关系，请参考 [使用注意事项](#使用注意事项) 中的数据类型映射表。
-
-
 
 ## 4. 查看导入进展
 

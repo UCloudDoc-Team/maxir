@@ -47,8 +47,7 @@ TTL [HOT | <ttl_expression> WARM ]
 
     TTL 表达式，支持具体时间也支持相对时间，指定了数据在缓存中的驻留时长。表达式中引用的列类型只能为 `date`、`varchar` 和 `integer`。并且，如引用的列类型为非时间类型，需要通过函数转换为时间类型。
 
-    > [!WARNING]  
-    > *`<ttl_expression>`* 仅在数据冷温热属性为 `WARM` 时需要指定，且必须指定。
+    !> *`<ttl_expression>`* 仅在数据冷温热属性为 `WARM` 时需要指定，且必须指定。
 
 
 
