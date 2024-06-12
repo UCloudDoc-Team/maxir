@@ -6,9 +6,10 @@
 
 SPM（SQL 计划管理，SQL Plan Management）是 Relyt 提供的一项功能，旨在确保 SQL 查询计划的稳定性。允许你将一个 SQL 命令（称为源 SQL 命令）绑定到另一个 SQL 命令（称为目标 SQL 命令）。源 SQL 命令和目标 SQL 命令之间的关联被定义为 SQL 绑定 (SQL Binding)。启用 SPM 后，每次发布源 SQL 命令运行时，Relyt 运行目标 SQL 命令。
 
-:::info
-目前，只有 `SELECT` 可以同时作为源 SQL 命令和目标 SQL 命令。
-:::
+> [!NOTE]  
+> 目前，只有 `SELECT` 可以同时作为源 SQL 命令和目标 SQL 命令。
+
+
 
 ## 创建 SQL 绑定
 
@@ -22,12 +23,12 @@ CREATE BINDING FOR '<source_sql>' USING STMT '<destination_sql>';
 在此语法中，
 
 - *`<source_sql>`*：一个字符串，指定源 SQL 命令。
-
 - *`<destination_sql>`*：一个字符串，指定目标 SQL 命令。
 
-:::note
-确保 *`<source_sql>`* 和 *`<destination_sql>`* 的值均符合 [SELECT](reference/sql-commands/select.md) 语法。
-:::
+> [!NOTE]  
+> 确保 *`<source_sql>`* 和 *`<destination_sql>`* 的值均符合 SELECT 语法。
+
+
 
 ### 示例
 
@@ -41,12 +42,11 @@ CREATE BINDING FOR 'SELECT orders_closed FROM sales' USING STMT 'SELECT orders_d
 
 Relyt 将关于 SQL 绑定的信息存储在 `pg_catalog.relyt_spm_info` 表中。要检查 SQL 绑定，你可以运行 `SELECT * FROM pg_catalog.relyt_spm_info`。
 
-:::info
-要访问 `pg_catalog.relyt_spm_info` 表中的数据，你必须使用实用程序模式连接到 Relyt。
-:::
+> [!NOTE]  
+> 要访问 `pg_catalog.relyt_spm_info` 表中的数据，你必须使用实用程序模式连接到 Relyt。
 
 下图显示了表结构。
-![](2023-11-06-19-47-38.png)
+![](/relyt/images/guides/optimization/2023-11-06-19-47-38.png)
 
 在这个表中，
 
@@ -86,13 +86,14 @@ UPDATE <table_name> SET <config_param_to_update> = <new_value>[, ... ] WHERE <co
 
    必须指定 `original_query_id` 和 `original_sql` 中的至少一个。最好使用 `original_query_id`。这是因为 `original_sql` 的值是区分大小写的，并且必须严格符合格式要求。
 
-   SPM 允许一个 SQL 命令绑定到多个 SQL 命令，也允许重复的 SQL 绑定。因此，如果你在 `DELETE` 命令中只指定了一个 `original_query_id` 或 `original_sql`，所有具有相同 `original_query_id` 或 `original_sql` 的 SQL 绑定都将被删除。我们建议你指定尽可能多的配置参数，以帮助唯一地识别你想要删除的绑定。要检查 SQL 绑定的配置设置，参见 [检查 SQL 绑定](#检查-sql-绑定)。
+   SPM 允许一个 SQL 命令绑定到多个 SQL 命令，也允许重复的 SQL 绑定。因此，如果你在 `DELETE` 命令中只指定了一个 `original_query_id` 或 `original_sql`，所有具有相同 `original_query_id` 或 `original_sql` 的 SQL 绑定都将被删除。我们建议你指定尽可能多的配置参数，以帮助唯一地识别你想要删除的绑定。要检查 SQL 绑定的配置设置，参见 [检查 SQL 绑定](#检查 SQL 绑定)。
 
 - *`<value>`*：配置参数的当前值。
 
-:::caution
-我们建议你使用此语法仅更改 `enabled` 参数。更改其他参数的值可能会导致意外错误。
-:::
+> [!CAUTION]
+> 我们建议你使用此语法仅更改 `enabled` 参数。更改其他参数的值可能会导致意外错误。
+
+
 
 ### 示例
 
@@ -116,7 +117,7 @@ UPDATE pg_catalog.relyt_spm_info SET enabled = false WHERE original_sql = 'SELEC
 UPDATE pg_catalog.zdb_spm_info SET enabled = true WHERE original_sql = 'SELECT orders_closed FROM sales';
 ```
 
-有关语法的更多信息，参见 [修改 SQL 绑定](#修改sql绑定)。
+有关语法的更多信息，参见 [修改 SQL 绑定](#修改 SQL 绑定)。
 
 ### 为所有 SQL 绑定启用 SPM
 
@@ -126,6 +127,5 @@ Relyt 使用 `relyt.spm_enable` 变量来控制 SQL 功能。要为所有 SQL �
 SET relyt.spm_enable = on;
 ```
 
-:::info
-值 `on` 可以是 Relyt 中表示 true 的任何值。更多详情，请参阅 [布尔类型](reference/data-types/boolean.md)。
-:::
+> [!NOTE]  
+> 值 `on` 可以是 Relyt 中表示 true 的任何值。

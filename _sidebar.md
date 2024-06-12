@@ -26,4 +26,3 @@
       * [对象权限](/relyt/guides/security/object-privileges)
       * [网络策略](/relyt/guides/security/network-policies)
       * [私有链接](/relyt/guides/security/private-link)
-    * [Hybrid DPS 与 Extreme DPS 偏差表](/relyt/guides/hdps-edps-differ)

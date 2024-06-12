@@ -39,9 +39,8 @@
 
 在 Relyt 控制台上，你可以在创建数仓服务单元时或对现有服务单元创建网络策略。以下步骤详细说明了如何为现有的数仓服务单元创建网络策略。
 
-:::info
-关于如何在创建数仓服务单元时创建网络策略的详细信息，请参见 [数仓服务单元](guides/dw-service-units/manage-dw-service-units.md#创建数仓服务单元) 中的“创建数仓服务单元”。
-:::
+> [!NOTE]  
+> 关于如何在创建数仓服务单元时创建网络策略的详细信息，请参见 [数仓服务单元](/relyt/guides/dw-service-units/manage-dw-service-units#创建数仓服务单元) 中的“创建数仓服务单元”。
 
 <br/>
 

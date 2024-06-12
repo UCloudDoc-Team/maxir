@@ -4,7 +4,7 @@
 
 ## 1. 准备工作
 
-在开始之前，请确保您的环境中已经有一个 Flink 集群。如果没有，请按照本章节的指导完成 Flink 集群配置。如果您的环境中已经配置好了 Flink 集群，请跳过本章节直接进入[第二章](#2使用flink创建表)。
+在开始之前，请确保您的环境中已经有一个 Flink 集群。如果没有，请按照本章节的指导完成 Flink 集群配置。如果您的环境中已经配置好了 Flink 集群，请跳过本章节直接进入[第二章](#2.使用flink创建表)。
 
 ### 1.1 下载依赖包、工具包
 
@@ -216,11 +216,14 @@ INSERT OVERWRITE flink_to_relyt SELECT * FROM flink_source;
 INSERT OVERWRITE flink_to_relyt PARTITION (id=<value>) SELECT * FROM flink_source;
 ```
 
-:::warning `INSERT OVERWRITE` 的使用限制
-- 只能用于处理 Flink 批任务。
-- Flink 表中的分区列必须和 Relyt 表中的聚簇键相匹配。
-- 支持的分区列类型包括 `CHAR`、`VARCHAR`、`TINYINT`、`SMALLINT`、`INTEGER`、`DATE`。关于 Flink 数据类型和 Relyt 数据类型对应关系，请参考 [使用注意事项](#使用注意事项) 中的数据类型映射表。
-:::
+> [!WARNING]  
+>
+> `INSERT OVERWRITE` 的使用限制
+>
+> - 只能用于处理 Flink 批任务。
+> - Flink 表中的分区列必须和 Relyt 表中的聚簇键相匹配。
+> - 支持的分区列类型包括 `CHAR`、`VARCHAR`、`TINYINT`、`SMALLINT`、`INTEGER`、`DATE`。关于 Flink 数据类型和 Relyt 数据类型对应关系，请参考 [使用注意事项](#使用注意事项) 中的数据类型映射表。
+
 
 
 ## 4. 查看导入进展
