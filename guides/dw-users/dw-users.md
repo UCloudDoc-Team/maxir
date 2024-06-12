@@ -48,13 +48,19 @@
 
 被授予特定权限的数仓用户可以对数据库对象执行特定操作。例如，被授予 Schema `USAGE` 权限的数仓用户可以访问 Schema 中包含的所有对象。
 
+```
+> [!WARNING]  
+> - 数仓用户**只能授予其拥有的权限给其他用户**。假设数仓用户 `user_A` 是 Schema `schema_a` 的所有者，而 `schema_a` 有两个表 `table_1` 和 `table_2`。`table_1` 是数仓用户 `user_A` 的，而 `table_2` 是数仓用户 `user_B` 的。数仓用户 `user_A` 只能将 `table_1` 的所有者转让给其他数仓用户，但不能改变 `table_2` 的所有权，尽管数仓用户 `user_A` 可以访问 `table_2`。
+> - 为提升数据安全，**权限授予不能跨级**。假设数仓用户 `user_B` 是 Schema `schema_b` 的所有者。`schema_b` 中存在多个表。当 `user_B` 将 `schema_b` 的 `ALL` 权限授予 `user_C` 后， `user_C` 拥有的只是 Schema 级的所有权限（`CREATE`、`USAGE`），而非 Schema 中表的权限。
+```
+
 
 :::warning 重要
 - 数仓用户**只能授予其拥有的权限给其他用户**。假设数仓用户 `user_A` 是 Schema `schema_a` 的所有者，而 `schema_a` 有两个表 `table_1` 和 `table_2`。`table_1` 是数仓用户 `user_A` 的，而 `table_2` 是数仓用户 `user_B` 的。数仓用户 `user_A` 只能将 `table_1` 的所有者转让给其他数仓用户，但不能改变 `table_2` 的所有权，尽管数仓用户 `user_A` 可以访问 `table_2`。
 - 为提升数据安全，**权限授予不能跨级**。假设数仓用户 `user_B` 是 Schema `schema_b` 的所有者。`schema_b` 中存在多个表。当 `user_B` 将 `schema_b` 的 `ALL` 权限授予 `user_C` 后， `user_C` 拥有的只是 Schema 级的所有权限（`CREATE`、`USAGE`），而非 Schema 中表的权限。
 :::
 
-关于对象权限的详细信息，请参考 [对象权限](guides/security/object-privileges.md)。关于权限授予和撤回的 SQL 操作，请参考 [GRANT](reference/sql-commands/grant.md) 和 [REVOKE](reference/sql-commands/revoke.md)。
+关于对象权限的详细信息，请参考 [对象权限](/relyt/guides/security/object-privileges)。关于权限授予和撤回的 SQL 操作，请参考 [GRANT](reference/sql-commands/grant.md) 和 [REVOKE](reference/sql-commands/revoke.md)。
 
 
 
