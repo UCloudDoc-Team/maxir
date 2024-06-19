@@ -8,14 +8,14 @@
 * 购买指南
     * [计费说明](/maxir/buy/charge)
 * 操作指南
-    * [DPS集群](/maxir/guides/dps-clusters)
+    * DPS集群
       * [DPS集群](/maxir/guides/dps-clusters/dps-clusters)
       * [管理DPS集群](/maxir/guides/dps-clusters/manage-dps-clusters)
       * [自适应查询扩展 AQS](/maxir/guides/dps-clusters/aqs)
-    * [数仓服务单元](/maxir/guides/dw-service-units)
+    * 数仓服务单元
       * [数仓服务单元](/maxir/guides/dw-service-units/dw-service-units)
       * [管理数仓服务单元](/maxir/guides/dw-service-units/manage-dw-service-units)
-    * [数仓用户](/maxir/guides/dw-users)
+    * 数仓用户
       * [数仓用户](/maxir/guides/dw-users/dw-users)
       * [管理数仓用户](/maxir/guides/dw-users/manage-dwusers)
     * 载入数据
