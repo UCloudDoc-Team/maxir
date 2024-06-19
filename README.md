@@ -1,6 +1,5 @@
 # 概览
 
-
 * 产品简介
     * [产品概述](/maxir/introduction/overview)
     * [产品架构](/maxir/introduction/architecture)
