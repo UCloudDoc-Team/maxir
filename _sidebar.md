@@ -6,7 +6,7 @@
     * [产品优势](/maxir/introduction/highlights)
     * [适用场景](/maxir/introduction/application-scenarios)
 * 购买指南
-    * [计费说明](/maxir/bug/charge)
+    * [计费说明](/maxir/buy/charge)
 * 操作指南
     * [DPS集群](/maxir/guides/dps-clusters)
       * [DPS集群](/maxir/guides/dps-clusters/dps-clusters)
