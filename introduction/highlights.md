@@ -52,7 +52,6 @@ MAXIR 的 DPS 集群在设计上就直接保证了隔离性：MAXIR 支持在多
 
 ### 跑不死
 
-![](/images/introduction/highlights-success.png)
 
 **灵活的弹性计算**
 
