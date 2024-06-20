@@ -20,7 +20,6 @@
       * [管理数仓用户](/maxir/guides/dw-users/manage-dwusers)
     * 载入数据
       * [通过 Flink 导入数据至 MAXIR](/maxir/guides/load-data/use-flink-to-load)
-      * [与 MAXIR 集成 Amazon S3](/maxir/guides/load-data/s3)
     * 优化器
       * [SQL 计划管理](/maxir/guides/optimization/sql-plan-management)
       * [优化器提示](/maxir/guides/optimization/optimizer-hints)
