@@ -11,7 +11,6 @@
     * [DPS集群](/maxir/guides/dps-clusters)
       * [DPS集群](/maxir/guides/dps-clusters/dps-clusters)
       * [管理DPS集群](/maxir/guides/dps-clusters/manage-dps-clusters)
-      * [自适应查询扩展 AQS](/maxir/guides/dps-clusters/aqs)
     * [数仓服务单元](/maxir/guides/dw-service-units)
       * [数仓服务单元](/maxir/guides/dw-service-units/dw-service-units)
       * [管理数仓服务单元](/maxir/guides/dw-service-units/manage-dw-service-units)
@@ -20,7 +19,6 @@
       * [管理数仓用户](/maxir/guides/dw-users/manage-dwusers)
     * 载入数据
       * [通过 Flink 导入数据至 MAXIR](/maxir/guides/load-data/use-flink-to-load)
-      * [与 MAXIR 集成 Amazon S3](/maxir/guides/load-data/s3)
     * 优化器
       * [SQL 计划管理](/maxir/guides/optimization/sql-plan-management)
       * [优化器提示](/maxir/guides/optimization/optimizer-hints)
