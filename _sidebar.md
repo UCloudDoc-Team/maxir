@@ -11,7 +11,6 @@
     * DPS集群
       * [DPS集群](/maxir/guides/dps-clusters/dps-clusters)
       * [管理DPS集群](/maxir/guides/dps-clusters/manage-dps-clusters)
-      * [自适应查询扩展 AQS](/maxir/guides/dps-clusters/aqs)
     * 数仓服务单元
       * [数仓服务单元](/maxir/guides/dw-service-units/dw-service-units)
       * [管理数仓服务单元](/maxir/guides/dw-service-units/manage-dw-service-units)
