@@ -25,5 +25,3 @@
       * [使用 TTL 管理数据](/maxir/guides/optimization/ttl)
     * 安全管理
       * [对象权限](/maxir/guides/security/object-privileges)
-      * [网络策略](/maxir/guides/security/network-policies)
-      * [私有链接](/maxir/guides/security/private-link)
