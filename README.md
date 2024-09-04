@@ -11,6 +11,7 @@
     * [DPS集群](/maxir/guides/dps-clusters)
       * [DPS集群](/maxir/guides/dps-clusters/dps-clusters)
       * [管理DPS集群](/maxir/guides/dps-clusters/manage-dps-clusters)
+      * [访问DPS集群](/guides/dps-clusters/access-dps-clusters)
     * [数仓服务单元](/maxir/guides/dw-service-units)
       * [数仓服务单元](/maxir/guides/dw-service-units/dw-service-units)
       * [管理数仓服务单元](/maxir/guides/dw-service-units/manage-dw-service-units)
