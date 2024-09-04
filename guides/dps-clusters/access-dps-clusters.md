@@ -1,7 +1,8 @@
+# 访问 DPS 集群
 MAXIR 提供了多种访问集群的方式，以满足不同的用户需求。默认情况下通过内网链接，同时也提供外网访问的解决方案。
 
-<h1 id="E2JKU">内网访问</h1>
 
+## 内网访问
 **方式一：使用 postgres client psql 访问**
 
 在与MAXIR处于同一VPC下的云主机上，安装postgres client psql 版本。建议最佳为12版本。其中用户名详情请参考 [用户管理](/maxir/maxir/guides/dw-users/manage-dwusers.md) 。
@@ -23,26 +24,26 @@ psql -h {maxir地址} -U {maxir控制台创建的用户名} -d ${maxir_database}
 
 ![](/images/guides/optimization/2.jpg)
 
-<h1 id="LNTor">外网访问</h1>
+## 外网访问
 MAXIR 的外网访问解决方案依托于 UCloud 的负载均衡产品 ALB，ALB 提供高效且安全的外网负载均衡服务，帮助您高效管理和优化外部流量。
 
-1.登录 [ALB 控制台](https://console.ucloud.cn/ulb/alb)，点击“创建负载均衡”按钮，创建实例，计费参考 [ALB 产品定价](https://docs.ucloud.cn/ulb/alb/buy/charge)。
+1.创建负载均衡：登录 [ALB 控制台](https://console.ucloud.cn/ulb/alb)，点击“创建负载均衡”按钮，创建实例，计费参考 [ALB 产品定价](https://docs.ucloud.cn/ulb/alb/buy/charge)。
 
 ![](/images/guides/optimization/3.jpg)
 
 ![](/images/guides/optimization/4.jpg)
 
-2.在[控制台列表页](https://console.ucloud.cn/ulb/alb)找到目标实例，点击“监听器管理”按钮，进行监听管理页面。
+2.进入监听管理页面：在[控制台列表页](https://console.ucloud.cn/ulb/alb)找到目标实例，点击“监听器管理”按钮，进行监听管理页面。
 
 ![](/images/guides/optimization/5.jpg)
 
-3.点击“添加”按钮，创建监听器，设置协议及对应端口号，点击“确认”按钮创建，创建成功并返回监听管理页面。
+3.创建监听器：点击“添加”按钮，创建监听器，设置协议及对应端口号，点击“确认”按钮创建，创建成功并返回监听管理页面。
 
 ![](/images/guides/optimization/6.jpg)
 
 ![](/images/guides/optimization/7.jpg)
 
-4.点击“添加节点”按钮，添加资源节点关联 MAXIR 实例。此处选择资源类型为“内⽹IP”， 监听端⼝、资源分别填写MAXIR 集群基础信息中的“DWSU控制台”内网地址和端⼝号。
+4.创建节点：点击“添加节点”按钮，添加资源节点关联 MAXIR 实例。此处选择资源类型为“内⽹IP”， 监听端⼝、资源分别填写MAXIR 集群基础信息中的“DWSU控制台”内网地址和端⼝号。
 
 ![](/images/guides/optimization/8.jpg)
 
@@ -56,7 +57,7 @@ MAXIR 的外网访问解决方案依托于 UCloud 的负载均衡产品 ALB，AL
 
 ![](/images/guides/optimization/11.jpg)
 
-7.本地访问控制台地址，测试连通性。访问地址：协议://外网地址:端口号。
+7.测试连通性：本地访问控制台地址，访问地址：协议://外网地址:端口号。
 
 ![](/images/guides/optimization/12.jpg)
 
