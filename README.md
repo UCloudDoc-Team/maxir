@@ -28,5 +28,5 @@
       * [使用 TTL 管理数据](/maxir/guides/optimization/ttl)
     * 安全管理
       * [对象权限](/maxir/guides/security/object-privileges)
-    * 最佳实践
-      * [MAXIR 向量版](/maxir/fast/vector)
+* 最佳实践
+    * [MAXIR 向量版](/maxir/fast/vector)
