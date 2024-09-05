@@ -218,7 +218,7 @@ DELIMITER '|' CSV;
 
 ## 4. QUERY
 
-### q1: 查询所有向量中离目标向量最近的10个向量
+**q1: 查询所有向量中离目标向量最近的10个向量** 
 
 ```postgresql
 SELECT id,
@@ -226,7 +226,7 @@ vector <-> '[0.6377800107002258,0.9509999752044678,0.9408400058746338,-0.5509499
 AS dist FROM test_tbl order by dist limit 10;
 ```
 
-### q2：查询8月8号到15号区间内，由公式 dist \* 10 为算法计算相似度，获得相似度大于67，最相似的20条数据
+**q2：查询8月8号到15号区间内，由公式 dist \* 10 为算法计算相似度，获得相似度大于67，最相似的20条数据**
 
 ```postgresql
 SELECT b.* FROM (SELECT a.id, a.dist * 10 AS similarity FROM
