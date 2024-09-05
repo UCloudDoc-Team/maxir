@@ -7,7 +7,7 @@
 如您想详细了解如何访问集群，请参考 [访问集群](/maxir/guides/dps-clusters/access-dps-clusters) 。
 ## 4.索引创建
 
-索引创建（Indexing）是构建数据结构以实现高效搜索的过程。Vector DPS 支持三种索引算法：暴力算法（Flat）、倒排文件索引（IVF）和分层可导航小世界（HNSW）。默认的算法是 HNSW。关于算法的详细说明，请参考 [索引算法说明](#索引算法说明)。
+索引创建（Indexing）是构建数据结构以实现高效搜索的过程。[Vector DPS](/maxir/guides/dps-clusters/dps-clusters.md#vector-dps-集群) 支持三种索引算法：暴力算法（Flat）、倒排文件索引（IVF）和分层可导航小世界（HNSW）。默认的算法是 HNSW。关于算法的详细说明，请参考 [索引算法说明](#索引算法说明)。
 
 如下 SQL 命令创建了一个名为 `test_tbl` 的表，表中有一个类型为 `vector(3)` 的名为 `val` 的列，并为该表以平方欧式距离创建了一个向量索引。
 
