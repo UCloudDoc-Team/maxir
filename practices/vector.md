@@ -37,7 +37,7 @@ ALTER TABLE test_tbl ALTER COLUMN vector SET STORAGE PLAIN;
 
 创建以后表的信息如下图：
 
-![image.png](/images/guides/optimization/practice.pic.jpg)
+![](/images/guides/optimization/practice.pic.jpg)
 
 
 * 表数据存储依据id作分布
@@ -70,7 +70,7 @@ quantization.product.ratio = "x16"
 
 增加索引后的表结构：
 
-![image.png](/images/guides/optimization/practice2.pic.jpg)
+![](/images/guides/optimization/practice2.pic.jpg)
 
 #### 参数介绍
 
@@ -84,7 +84,8 @@ l2\_ops表示向量的距离计算公式
 
 | 类型名称    | 操作符(可在SELECT中使用该操作符计算距离，详见下方查询语句) | 描述     | 计算公式定义                                                                                                                      |
 | ------- | --------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------- |
-| l2\_ops | `<->`                             | 平方欧氏距离 | ![image](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/1wvqr727P9GzOako/img/e8d09fe3-76b5-4365-9060-d37cf3c704c4.png) |
+| l2\_ops | `<->`                             | 平方欧氏距离 | ![](/images/guides/optimization/1-1.png)|
+
 
 **建议使用l2\_ops以达到最佳性能**
 
