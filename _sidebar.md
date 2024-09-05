@@ -7,6 +7,8 @@
     * [适用场景](/maxir/introduction/application-scenarios)
 * 购买指南
     * [计费说明](/maxir/buy/charge)
+* 快速上手
+    * [MAXIR 向量版](/maxir/fast/vector)
 * 操作指南
     * DPS集群
       * [DPS集群](/maxir/guides/dps-clusters/dps-clusters)
