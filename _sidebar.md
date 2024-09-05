@@ -29,4 +29,4 @@
     * 安全管理
       * [对象权限](/maxir/guides/security/object-privileges)
 * 最佳实践
-    * [MAXIR 向量版](/maxir/fast/vector)
+    * [MAXIR 向量版](/maxir/practices/vector)
