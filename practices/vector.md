@@ -37,7 +37,8 @@ ALTER TABLE test_tbl ALTER COLUMN vector SET STORAGE PLAIN;
 
 创建以后表的信息如下图：
 
-![image.png](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/1wvqr727P9GzOako/img/03eb0a81-bf74-4ced-b28d-ab162f209d4a.png)
+![image.png](/images/guides/optimization/practice.pic.jpg)
+
 
 * 表数据存储依据id作分布
 
@@ -69,7 +70,7 @@ quantization.product.ratio = "x16"
 
 增加索引后的表结构：
 
-![image.png](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/1wvqr727P9GzOako/img/3620e2fb-457b-4072-b14b-7a460df2045f.png)
+![image.png](/images/guides/optimization/practice2.pic.jpg)
 
 #### 参数介绍
 
