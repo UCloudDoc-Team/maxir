@@ -1,13 +1,10 @@
 # MAXIR 向量版
 ## 1.创建集群
 如您想详细了解如何创建集群，请参考 [创建集群](/maxir/guides/dps-clusters/manage-dps-clusters#创建-dps-集群) 。
-
 ## 2.创建用户
 如您想详细了解如何创建用户，请参考 [创建用户](/maxir/guides/dw-users/manage-dwusers#邀请创建数据库用户) 。
-
 ## 3.访问集群
 如您想详细了解如何访问集群，请参考 [访问集群](/maxir/guides/dps-clusters/access-dps-clusters) 。
-
 ## 4.索引创建
 
 索引创建（Indexing）是构建数据结构以实现高效搜索的过程。Vector DPS 支持三种索引算法：暴力算法（Flat）、倒排文件索引（IVF）和分层可导航小世界（HNSW）。默认的算法是 HNSW。关于算法的详细说明，请参考 [索引算法说明](#索引算法说明)。
@@ -143,9 +140,9 @@ SELECT * FROM test_tbl ORDER BY val <-> '[0.5,0.5,0.5]' LIMIT 5;
 
 | 名称 | 描述 | 公式定义 |
 | :- | :- | :- | 
-| `<->` | 平方欧氏距离 | ![](1-1.png) |
-| `<#>` | 负点积 | ![](1-2.png) |
-| `<=>` | 余弦距离 | ![](1-3.png) |
+| `<->` | 平方欧氏距离 | ![](/images/guides/optimization/1-1.png) |
+| `<#>` | 负点积 | ![](/images/guides/optimization/1-2.png) |
+| `<=>` | 余弦距离 | ![](/images/guides/optimization/1-3.png) |
 
 <br/>
 
@@ -178,7 +175,7 @@ SELECT * FROM test_tbl ORDER BY val <=> '[0.5,0.5,0.5]' LIMIT 10;
 
 ### 查询项
 
-Vector DPS 支持设置各种查询项。更多信息，请参考 [参考手册](#搜索选项) 中的“搜索选项”章节。
+Vector DPS 支持设置各种查询项。更多信息，请参考手册中的“[搜索选项](#搜索选项) ”章节。
 
 如下为两个简单示例：
 
@@ -264,7 +261,7 @@ quantization.product.ratio = "x16"
 $$);
 ```
 
-更多配置，请参考 [参考手册](#表-product-支持的选项) 中的“表 `product` 支持的选项”章节。
+更多配置，请参考手册中的“[表 `product` 支持的选项](#表-product-支持的选项)”章节。
 
 
 
@@ -286,9 +283,8 @@ WITH (options = "[indexing.hnsw.quantization.scalar]");
 此外，也可以通过使用 CPA 等降维方法来减少向量的维数。
 
 
-
 ---
-## 8.与 `pgvector` 的兼容性
+## 8.与 pgvector 的兼容性
 
 Vector DPS 在如下方面原生兼容 `pgvector`：
 
@@ -306,7 +302,6 @@ Vector DPS 在如下方面原生兼容 `pgvector`：
 
 
 
-
 ### 索引选项和查询选项
 
 `ivfflat` 索引支持如下索引选项：
@@ -317,7 +312,6 @@ Vector DPS 在如下方面原生兼容 `pgvector`：
 
 <br/>
 
-
 `ivfflat` 索引支持如下查询选项：
 
 | 选项 | 类型 | 取值范围 | 默认值 | 说明 |
@@ -326,9 +320,8 @@ Vector DPS 在如下方面原生兼容 `pgvector`：
 
 <br/>
 
-:::caution 重要提示
+caution 重要提示:<br/>
 在 Vector DPS 中，`ivfflat.probes` 的默认值为 `10`，而不是 `pgvector` 中的 `1`。
-:::
 
 
 `hnsw` 索引支持如下索引选项：
@@ -388,9 +381,8 @@ CREATE INDEX ivfflat_ip_index ON test_tbl USING ivfflat (val vector_cosine_ops) 
 -- 匿名 [ivf + vector_ip_ops]，包含所有选项
 CREATE INDEX ON test_tbl USING ivfflat (val vector_ip_ops) WITH (lists = 40)
 ```
-## 9.参考手册
-
 ---
+## 9.参考手册
 
 ### 运算符类列表
 
