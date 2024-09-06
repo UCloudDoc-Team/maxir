@@ -320,7 +320,7 @@ Vector DPS 在如下方面原生兼容 `pgvector`：
 
 <br/>
 
-caution 重要提示:<br/>
+>caution 重要提示  <br/>
 在 Vector DPS 中，`ivfflat.probes` 的默认值为 `10`，而不是 `pgvector` 中的 `1`。
 
 
@@ -341,7 +341,7 @@ caution 重要提示:<br/>
 
 <br/>
 
-caution 重要提示<br/>
+>caution 重要提示 <br/>
 在 Vector DPS 中，`hnsw.ef_search` 的默认值为 `100`，而不是 `pgvector` 中的 `40`。
 
 
