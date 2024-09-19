@@ -13,6 +13,7 @@ DPS（Data Processing Service ) ，是 MAXIR 提供的计算引擎。它是数�
 
 **集群**<br />
 集群，也称 DPS 集群，是由 CPU、内存和 I/O 资源组成的集合的规范形式，创建于数仓服务单元内，对于在 MAXIR 上运行查询和 DML 操作至关重要。执行查询时，必须选择一个 DPS 集群。DPS 集群根据使用的计算引擎类型可以分为三类：Hybrid DPS 集群、Extreme DPS 集群、Vector DPS 集群，下表对三种类型的 DPS 集群进行了比较：
+
 | **对比项** | **Hybrid DPS 集群** | **Extreme DPS 集群** | **Vector DPS 集群** |
 | --- | --- | --- | --- |
 | 计算引擎类型 | Hybrid DPS | Extreme DPS | Vector DPS |
