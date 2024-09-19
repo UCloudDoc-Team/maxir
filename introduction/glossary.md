@@ -23,8 +23,7 @@ DPS（Data Processing Service ) ，是 MAXIR 提供的计算引擎。它是数�
 | 删除 | 不支持 | 支持 | 不支持 |
 | 扩缩容 | 支持 | 支持 | 即将支持 |
 | 手动暂定 | 支持 | 支持 | 不支持 |
-<br />
-<br />
+
 
 **Hybrid DPS**<br />
 Hybrid DPS，通用计算引擎，高度兼容 PostgreSQL 的 SQL 功能，在性能和成本之间实现了最佳平衡。
