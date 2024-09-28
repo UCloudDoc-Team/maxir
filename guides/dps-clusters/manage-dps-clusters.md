@@ -6,7 +6,7 @@ MAXIR 的基本部署单元是数仓服务单元，每个服务单元包括一�
 
 ## 创建集群
 
-MAXIR 标准版在创建集群时，默认使用 Hybrid DPS 计算引擎。创建 Hybrid DPS 集群的同时，系统会自动生成相应的数据仓库服务单元。如需创建 Extreme DPS 集群，可在 Hybrid DPS 集群创建完成后，于对应的数据仓库服务单元中添加多个Extreme DPS集群，操作详情请操作[DPS 管理](/maxir/guides/dw-service-units/manage-dw-service-units#创建数仓服务单元) 中的“创建 Extreme DPS ”。
+MAXIR 标准版在创建集群时，默认使用 Hybrid DPS 计算引擎。创建 Hybrid DPS 集群的同时，系统会自动生成相应的数据仓库服务单元。如需创建 Extreme DPS 集群，可在 Hybrid DPS 集群创建完成后，于对应的数据仓库服务单元中添加多个Extreme DPS集群，操作详情参考[DPS 管理](/maxir/guides/dw-service-units/manage-dw-service-units#创建数仓服务单元) 中的“创建 Extreme DPS ”。
 
 操作流程
 >1. 登录 [MAXIR 控制台](https://console.ucloud.cn/maxir/standard) ，选择“创建集群”
@@ -31,12 +31,20 @@ MAXIR 标准版在创建集群时，默认使用 Hybrid DPS 计算引擎。创�
 你可以查看每个集群信息，包括集群名称、资源 ID、网络信息、DPS 集群等。
 
 操作流程
->1. 登录控制台集群[列表页](https://console.ucloud.cn/maxir/standard)，
+>1. 登录控制台集群[列表页](https://console.ucloud.cn/maxir/standard)
 >2. 找到目标集群，点击操作列“详情”按钮，跳转查看
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727528756931-ad046c7e-61bd-4daa-88b9-6cb4dbfb84e4.png)
 
 
+## 删除集群
+你可以删除不再需要的集群。
+
+操作流程
+>1. 登录控制台集群[列表页](https://console.ucloud.cn/maxir/standard)
+>2. 找到目标集群，点击操作列的“删除”按钮，弹窗确认并删除
+
+![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727528759445-6f49819d-6515-4958-a38f-b1f7c502cd28.png)
 
 
 
