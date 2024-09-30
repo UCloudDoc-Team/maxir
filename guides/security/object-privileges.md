@@ -18,11 +18,11 @@
 
 >请注意
 >
-> 每一个数据库对象的权限必须单独授予。例如，将数据库的 `ALL` 授予数仓用户 A 并不意味着数仓用户 A 可以访问数据库中包含的其他数据库对象。数仓用户 A 只拥有该数据库本身的数据库级所有权限（即 `CREATE`、`CONNECT`、`TEMPORARY`、`TEMP`）。
+> - 每一个数据库对象的权限必须单独授予。例如，将数据库的 `ALL` 授予数仓用户 A 并不意味着数仓用户 A 可以访问数据库中包含的其他数据库对象。数仓用户 A 只拥有该数据库本身的数据库级所有权限（即 `CREATE`、`CONNECT`、`TEMPORARY`、`TEMP`）。
 >
->数据库账号只能授予其拥有的权限给其他用户。假设数仓用户 `user_A` 是 Schema `schema_a` 的所有者，而 `schema_a` 有两个表 `table_1` 和 `table_2`。`table_1` 是数仓用户 `user_A` 的，而 `table_2` 是数仓用户 `user_B` 的。数仓用户 `user_A` 只能将 `table_1` 的所有者转让给其他数仓用户，但不能改变 `table_2` 的所有权，尽管数仓用户 `user_A` 可以访问 `table_2`。
+>- 数据库账号只能授予其拥有的权限给其他用户。假设数仓用户 `user_A` 是 Schema `schema_a` 的所有者，而 `schema_a` 有两个表 `table_1` 和 `table_2`。`table_1` 是数仓用户 `user_A` 的，而 `table_2` 是数仓用户 `user_B` 的。数仓用户 `user_A` 只能将 `table_1` 的所有者转让给其他数仓用户，但不能改变 `table_2` 的所有权，尽管数仓用户 `user_A` 可以访问 `table_2`。
 >
->为提升数据安全，权限授予不能跨级。假设数仓用户 `user_B` 是 Schema `schema_b` 的所有者。`schema_b` 中存在多个表。当 `user_B` 将 `schema_b` 的 `ALL` 权限授予 `user_C` 后， `user_C` 拥有的只是 Schema 级的所有权限（`CREATE`、`USAGE`），而非 Schema 中表的权限。
+>- 为提升数据安全，权限授予不能跨级。假设数仓用户 `user_B` 是 Schema `schema_b` 的所有者。`schema_b` 中存在多个表。当 `user_B` 将 `schema_b` 的 `ALL` 权限授予 `user_C` 后， `user_C` 拥有的只是 Schema 级的所有权限（`CREATE`、`USAGE`），而非 Schema 中表的权限。
 
 
 
