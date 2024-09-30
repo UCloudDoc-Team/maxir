@@ -7,11 +7,11 @@ AQS 能在运行时自动识别大型查询，并将它们发送到 AQS 共享�
 - 查询运行会影响当前 DPS 集群的性能
 
 
-## 启用 AQS
+## 配置 AQS
 
-方式一：在创建 Extreme DPS 集群时，可以为集群启用 AQS。详情参考[ DPS 管理 ](/maxir/guides/dps-clusters/manager-dps#创建-extreme-dps)中的“创建 Extreme DPS ”。
+方式一：在创建 Extreme DPS 集群时，可以为集群开启 AQS。详情参考[ DPS 管理 ](/maxir/guides/dps-clusters/manager-dps#创建-extreme-dps)中的“创建 Extreme DPS”。
 
-方式二：修改 Extreme DPS 配置时，可以为集群启用 AQS。详情参考[ DPS 管理 ](/maxir/guides/dps-clusters/manager-dps#修改-dps-配置)中的“修改 DPS 配置 ”。
+方式二：修改 Extreme DPS 配置时，可以为集群开启/关闭/修改 AQS 配置。详情参考[ DPS 管理 ](/maxir/guides/dps-clusters/manager-dps#修改-aqs-配置)中的“修改 AQS 配置”。
 
 
 ## 注意事项
