@@ -15,7 +15,9 @@
     * 集群管理
       * [集群管理](/maxir/guides/dps-clusters/manage-dps-clusters)
       * [访问集群](/maxir/guides/dps-clusters/access-dps-clusters)
-    * [DPS 管理](/maxir/guides/dps-clusters/manager-dps)
+    * DPS 管理
+      * [DPS 管理](/maxir/guides/dps-clusters/manager-dps)
+      * [AQS 自适应扩展查询](/maxir/guides/dps-clusters/aqs)
     * [用户管理](/maxir/guides/dw-users/manage-dwusers)
     * 载入数据
       * [通过 Flink 导入数据至 MAXIR](/maxir/guides/load-data/use-flink-to-load)
