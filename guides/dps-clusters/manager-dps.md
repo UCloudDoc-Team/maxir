@@ -1,13 +1,11 @@
 # DPS 管理
 MAXIR 提供了丰富的功能来帮助你管理集群以满足你的业务需求。例如，你可以根据特定规格创建多个 DPS 来处理不同的工作负载，实现工作负载间的隔离。
 
-一个集群支持创建一个 Hybrid DPS 和多个 Extreme DPS 。创建集群时默认创建的是 Hybrid DPS 类型。关于如何创建 Hybrid DPS 集群，请参考 [集群管理](https://consol)中的“创建集群“。
 
 ## 创建 Extreme DPS 
 MAXIR 支持按需创建多个 Extreme DPS 。
 
 操作流程
-
 >1. 登录 [MAXIR 控制台](https://console.ucloud.cn/maxir/standard)。在默认展示的集群列表中，点击目标集群名称，进入详情页。
 >2. 点击 DPS 列表左上方的“创建Extreme DPS”按钮。
 >3. 在弹出的 DPS配置 页面，配置 DPS 集群。
