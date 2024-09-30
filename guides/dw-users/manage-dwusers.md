@@ -3,8 +3,6 @@
 
 本主题介绍如何邀请他人创建数仓用户、删除数仓用户、以及通知数仓用户重置密码。
 
-![](https://ncn1h4lygmej.feishu.cn/2c65ecf6-6788-472e-8a18-7ddac17b57cf)
-![](https://ncn1h4lygmej.feishu.cn/088e961d-791b-4500-b04b-c5dd1821f2d3)
 
 
 ## 创建用户
@@ -13,8 +11,9 @@
 >2. 点击“账号管理”页签。在展示的数据库账号列表左上方，点击“创建账号”按钮。
 >3. 设置数据库账号的名称和密码，点击“确认”。
 
-![](https://ncn1h4lygmej.feishu.cn/2c65ecf6-6788-472e-8a18-7ddac17b57cf)
-![](https://ncn1h4lygmej.feishu.cn/088e961d-791b-4500-b04b-c5dd1821f2d3)
+![](/images/guide/user-0.png)
+![](/images/guide/user-01.png)
+
 
 
 
@@ -24,8 +23,7 @@
 >2. 点击"账号管理"页签。找到目标数据库账号，点击"操作"列的"删除账号"按钮。
 >3. 在弹出的确认对话框中，确认删除信息，并点击"确认"。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727528760367-43788e0e-685c-4aa8-8c6b-9a6689759e69.png)
-
+![](/images/guide/user-1.png)
 
 
 
