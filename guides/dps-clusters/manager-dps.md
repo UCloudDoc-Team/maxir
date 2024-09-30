@@ -13,9 +13,9 @@ MAXIR 支持按需创建多个 Extreme DPS 。
 >3. 在弹出的 DPS配置 页面，配置 DPS 集群。
 >4. 在右侧「付费信息」部分，确认付费信息，并点击“立即购买”按钮，创建成功，返回详情页。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727528759463-8832bf2e-f4ef-48ec-86f3-3e504ae8748b.png)
+![](/images/guide/DPS-1.png)
+![](/images/guide/DPS-2.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727528759773-c5aa7365-e483-408c-b895-6c151c5a2504.png)
 
 相关参数说明如下：
 
@@ -38,9 +38,9 @@ MAXIR 支持按需创建多个 Extreme DPS 。
 
 配置完成后，新的配置立即生效，无需重启等其他操作。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727528759890-99fc9392-a7ae-408f-b988-523012fe92b6.png)
+![](/images/guide/DPS-3.png)
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727528759948-b02452cf-48ce-42a1-8400-a3f76bf176aa.png)
+![](/images/guide/DPS-4.png)
 
 ## 关闭 DPS
 当某个 DPS 集群暂时无需使用时，可通过「关闭」功能手动暂停该 DPS 集群。DPS 集群暂停后，正在运行或排队中的所有查询都将被终止。请谨慎执行此操作。
@@ -51,7 +51,7 @@ MAXIR 支持按需创建多个 Extreme DPS 。
 >2. 在 DPS 列表中，找到目标 DPS 集群，点击 操作 列中的“关闭”按钮。
 >3. 在弹出的确认框中，点击“确认”。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727528760096-ad89cc86-e489-4fe1-a4da-dc5ecbd80ed9.png)
+![](/images/guide/DPS-5.png)
 
 ## 删除 DPS 
 如果不再需要 Extreme DPS 集群，可以手动删除。Hybrid DPS 集群不能被删除。
@@ -60,4 +60,4 @@ MAXIR 支持按需创建多个 Extreme DPS 。
 >2. 在 DPS 列表中，找到目标 DPS 集群，在 操作 列中选择 ... > 删除。
 >3. 在弹出的确认对话框中，点击 确认。
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727528760286-ec851e2e-6ab9-48c0-bba7-2e744e78037f.png)
+![](/images/guide/DPS-6.png)
