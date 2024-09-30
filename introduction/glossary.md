@@ -31,7 +31,7 @@ Hybrid DPS，通用计算引擎，高度兼容 PostgreSQL 的 SQL 功能，在�
 Extreme DPS，高速版计算引擎，性能相比 Hybrid DPS 有显著提升，非常适合高实时性要求的工作负载。
 
 
-## VectorDPS
+## Vector DPS
 Vector DPS 是由 MAXIR 提供的专⻔针对⾮结构化数据存储、检索和分析的 Embedding 向量存储与计算引擎，致⼒于帮助⽤⼾解锁 AIGC（Artificial Intelligence Generated Content，⼈⼯智能⽣成内容）、RAG（Retrieval Augmented Generation，检索增强⽣成）和 AI 智能代理等应⽤场景，从⽽帮助⽤⼾构建适应 AIGC 时代的数据基础设施。其主要特点包括： 
 - **⾼维向量实时化**：⽀持⾼达 5000 维的向量数据，提供即时的增删改查能⼒ 
 - **融合检索**：⽀持多条件灵活组合，提供超过 99% 的检索准确率 
