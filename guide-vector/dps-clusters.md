@@ -14,8 +14,6 @@ MAXIR 的基本部署单元是数仓服务单元，每个服务单元包括不�
 
 ![](https://cdn.nlark.com/yuque/0/2024/png/29571810/1727676075650-3e927fcf-7c20-4efe-aa0a-c9e385603720.png)
 
-### 访问集群
-如您想了解详情，请参考 [访问集群](https://ncn1h4lygmej.feishu.cn/wiki/XGkfwJ1WxiYPXjkqIhmckcr4nPi#BDhsdq9VVo9K59xFFANcRRzFnWh) 。
 
 ### 删除集群
 你可以删除不再需要的集群。
