@@ -2,9 +2,9 @@
 ## 1.创建集群
 如您想详细了解如何创建集群，请参考 [创建集群](/maxir/guide-vector/dps-clusters?id=创建集群) 。
 ## 2.创建用户
-如您想详细了解如何创建用户，请参考 [创建用户](/maxir/guides/dw-users/manage-dwusers#邀请创建数据库用户) 。
+MAXIR 向量版创建用户操作同 MAXIR 标准版，如您想了解操作详情，请参考“标准版操作指南”中的 [创建用户](/maxir/guides/dw-users/manage-dwusers#邀请创建数据库用户) 。
 ## 3.访问集群
-如您想详细了解如何访问集群，请参考 [访问集群](/maxir/guides/dps-clusters/access-dps-clusters) 。
+MAXIR 向量版访问集群操作同 MAXIR 标准版，如您想了解操作详情，请参考“标准版操作指南”中的 [访问集群](/maxir/guides/dps-clusters/access-dps-clusters) 。
 ## 4.索引创建
 
 索引创建（Indexing）是构建数据结构以实现高效搜索的过程。[Vector DPS](/maxir/guides/dps-clusters/dps-clusters.md#vector-dps-集群) 支持三种索引算法：暴力算法（Flat）、倒排文件索引（IVF）和分层可导航小世界（HNSW）。默认的算法是 HNSW。关于算法的详细说明，请参考 [索引算法说明](#索引算法说明)。
