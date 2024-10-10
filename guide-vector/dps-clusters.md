@@ -9,6 +9,7 @@ MAXIR 向量版创建集群时默认使用 Vector DPS 类型的计算引擎。Ve
 >1. 登录 [MAXIR 控制台](https://console.ucloud.cn/maxir/vector) ，选择“创建集群”
 >2. 根据需求，选择对应配置，并“立即购买”
 >3. 跳转列表，点击“详情”查看配置
+
 ![](/images/guide/vector-create1.png)
 ![](/images/guide/vector-create2.png)
 
