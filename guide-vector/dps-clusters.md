@@ -14,6 +14,7 @@ MAXIR 向量版创建集群时默认使用 Vector DPS 类型的计算引擎。Ve
 ![](/images/guide/vector-create2.png)
 
 相关参数说明如下：
+
 | 参数 | 是否必填 | 描述 |
 | --- | --- | --- |
 | 地域选择 | 是 | 集群所在地域。 |
