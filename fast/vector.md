@@ -1,6 +1,6 @@
 # MAXIR 向量版
 ## 1.创建集群
-如您想详细了解如何创建集群，请参考 [创建集群](/maxir/guides/dps-clusters/manage-dps-clusters#创建-dps-集群) 。
+如您想详细了解如何创建集群，请参考 [创建集群](/maxir/guide-vector/dps-clusters?id=创建集群) 。
 ## 2.创建用户
 如您想详细了解如何创建用户，请参考 [创建用户](/maxir/guides/dw-users/manage-dwusers#邀请创建数据库用户) 。
 ## 3.访问集群
