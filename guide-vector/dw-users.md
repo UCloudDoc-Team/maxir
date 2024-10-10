@@ -1,2 +1,4 @@
 # 用户管理
-登录 [MAXIR 向量版控制台](https://console.ucloud.cn/maxir/vector)后，进入集群详情页面。在该页面中，您可以通过“用户管理”功能来管理集群用户的相关操作。如您想详细了解如何创建用户，请参考“标准版操作指南”中的 [创建用户](/maxir/guides/dw-users/manage-dwusers?id=创建用户) 。
+本主题介绍如何邀请他人创建数仓用户、删除数仓用户、以及通知数仓用户重置密码。
+
+MAXIR 向量版的用户管理功能同 MAXIR 标准版，如您想了解操作详情，请参考“标准版操作指南”中的 [用户管理](/maxir/guides/dw-users/manage-dwusers) 。
