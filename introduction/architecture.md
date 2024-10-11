@@ -9,7 +9,7 @@ MAXIR 的架构分为三层，自下而上对应不同的核心概念和产品�
 
 **计算层：多 DPS 集群**
 - Hybrid DPS 集群：兼容 PostgreSQL 功能，提供通用的数据仓库服务，在一个数仓服务单元中有且仅有一个。
-- Extreme DPS 集群：相比 Hybrid DPS 集群，性能提升数十倍，但功能有所精简，适用于高性能要求的应用场景，支持按需创建。两者差异详细参考 <font style="color:rgb(36,91,219);">DPS集群对比</font> 。
+- Extreme DPS 集群：相比 Hybrid DPS 集群，性能提升数十倍，但功能有所精简，适用于高性能要求的应用场景，支持按需创建。两者差异详细参考 [DPS集群对比](/maxir/introduction/glossary?id=集群) 。
 - Vector DPS 集群：Vector DPS 集群是专用于处理向量化工作负载的计算集群，分为性能优化和容量优化两种类型。
 
 **业务层：接口与控制**
