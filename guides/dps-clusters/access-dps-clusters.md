@@ -1,5 +1,5 @@
 # 访问集群
-MAXIR 提供了多种访问集群的方式，以满足不同的用户需求。默认情况下通过内网链接，同时也提供外网访问的解决方案。
+MAXIR 提供了多种访问集群的方式，以满足不同的用户需求。默认情况下通过内网连接，同时针对数据库管理系统（DMS）也提供了外网访问解决方案。
 
 ## 内网访问
 **方式一：使用 postgres client psql 访问**
@@ -24,7 +24,7 @@ psql -h {maxir地址} -U {maxir控制台创建的用户名} -d ${maxir_database}
 ![](/images/guides/optimization/2.jpg)
 
 ## 外网访问
-MAXIR 的外网访问解决方案依托于 UCloud 的负载均衡产品 ALB，ALB 提供高效且安全的外网负载均衡服务，帮助您高效管理和优化外部流量。
+MAXIR 的外网访问解决方案依托于 UCloud 的负载均衡产品 ALB，ALB 提供高效且安全的外网负载均衡服务，帮助您高效管理和优化外部流量，妥善应对数据库管理系统（DMS）外网访问需求。
 
 1.创建负载均衡：登录 [ALB 控制台](https://console.ucloud.cn/ulb/alb)，点击“创建负载均衡”按钮，创建实例，计费参考 [ALB 产品定价](https://docs.ucloud.cn/ulb/alb/buy/charge)。
 
