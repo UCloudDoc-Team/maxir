@@ -2,7 +2,7 @@
 MAXIR 提供了多种访问集群的方式，以满足不同的用户需求。默认情况下通过内网链接，同时也提供外网访问的解决方案。
 
 ## 内网访问
-### 方式一：通过 JDBC 通道访问 PostgreSQL 数据库
+### 方式一：使用 postgres client psql 访问
 
 在与MAXIR处于同一VPC下的云主机上，安装postgres client psql 版本。建议最佳为12版本。用户名操作请参考 [用户管理](/maxir/guides/dw-users/manage-dwusers) 。
 
@@ -10,7 +10,7 @@ MAXIR 提供了多种访问集群的方式，以满足不同的用户需求。�
 psql -h {maxir地址} -U {maxir控制台创建的用户名} -d ${maxir_database}
 ```
 
-### 方式二：通用 URL 访问数据管理服务
+### 方式二：使用云平台的“DWSU控制台”访问
 
 通过云平台的“DWSU控制台”访问集群时，默认使用内网进行连接。如需外网访问，具体操作请参考。
 
@@ -24,7 +24,7 @@ psql -h {maxir地址} -U {maxir控制台创建的用户名} -d ${maxir_database}
 ![](/images/guides/optimization/2.jpg)
 
 ## 外网访问
-### 方式一：通过 JDBC 通道访问 PostgreSQL 数据库
+### 方式一：使用 postgres client psql 访问
 
 通过Nginx配置反向代理来进行外网访问
 
@@ -95,8 +95,7 @@ ${IP}为ngnix服务器的ip
 
 
 
-### 方式二：通用 URL 访问数据管理服务
-
+### 方式二：使用云平台的“DWSU控制台”访问
 MAXIR 的外网访问解决方案依托于 UCloud 的负载均衡产品 ALB，ALB 提供高效且安全的外网负载均衡服务，帮助您高效管理和优化外部流量。
 
 1.创建负载均衡：登录 [ALB 控制台](https://console.ucloud.cn/ulb/alb)，点击“创建负载均衡”按钮，创建实例，计费参考 [ALB 产品定价](https://docs.ucloud.cn/ulb/alb/buy/charge)。
