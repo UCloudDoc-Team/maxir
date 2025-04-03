@@ -1,6 +1,6 @@
 # 字符串函数和运算符
 
-字符串函数和运算符处理字符串输入并返回字符串或数值。Extreme DPS 支持的字符串类型是 `varchar` 和 `text`。有关字符串类型的详细说明，请参考 [字符类型](i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/data-types/character.md)。
+字符串函数和运算符处理字符串输入并返回字符串或数值。Extreme DPS 支持的字符串类型是 `varchar` 和 `text`。有关字符串类型的详细说明，请参考 [字符类型](/maxir/Reference_Manual/data-types/character.md)。
 
 ---
 
