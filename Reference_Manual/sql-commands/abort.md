@@ -19,11 +19,11 @@ ABORT
 描述
 -----
 
-`ABORT` 回滚当前事务并不会保存当前事务所做的任何更新，与 [ROLLBACK](rollback.md) 效果相同。
+`ABORT` 回滚当前事务并不会保存当前事务所做的任何更新，与 [ROLLBACK](/maxir/Reference_Manual/sql-commands/rollback.md) 效果相同。
 
-:::note
-`ABORT` 只是出于历史原因才出现的。
-:::
+
+>note
+>`ABORT` 只是出于历史原因才出现的。
 
 ---
 参数
