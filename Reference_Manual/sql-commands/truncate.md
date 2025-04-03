@@ -18,7 +18,7 @@ TRUNCATE [TABLE] [ONLY] <name> [ * ] [, ...]
 
 ## 描述
 
-`TRUNCATE` 快速清除表中的所有行数据，效果等同于对每个表进行的无条件 [DELETE](delete.md)。但由于 `TRUNCATE` 实际上并不扫描表，所以速度更快。此外，`TRUNCATE` 执行完成后会立即回收磁盘空间，而不需要 [VACUUM](vacuum.md) 操作，这使得 `TRUNCATE` 在大表上应用的效果非常明显。
+`TRUNCATE` 快速清除表中的所有行数据，效果等同于对每个表进行的无条件 [DELETE](/maxir/Reference_Manual/sql-commands/delete.md)。但由于 `TRUNCATE` 实际上并不扫描表，所以速度更快。此外，`TRUNCATE` 执行完成后会立即回收磁盘空间，而不需要 [VACUUM](/maxir/Reference_Manual/sql-commands/vacuum.md) 操作，这使得 `TRUNCATE` 在大表上应用的效果非常明显。
 
 `TRUNCATE ... WHERE` 变体用于删除指定了聚簇键的表中符合特定条件的数据，条件通过 `WHERE` 子句指定，只能且必须基于目标表的第一个聚簇键。
 
