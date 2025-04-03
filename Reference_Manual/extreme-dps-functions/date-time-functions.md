@@ -7,9 +7,8 @@ Extreme DPS 允许你使用几个函数来处理日期/时间值。
 
 当比较没有时区的时间戳或带有时区的时间戳时，前者的值假定为在 `TimeZone` 配置参数指定的时区中给出，并旋转到 UTC 以与后者的值（内部已经在 UTC 中）进行比较。类似地，当将其与时间戳进行比较时，日期值被假定为在 `TimeZone` 区域中表示午夜。
 
-:::info 提示
-本节使用别名 `timestamptz` 来代表 `timestamp with time zone`。
-:::
+>info 提示
+>本节使用别名 `timestamptz` 来代表 `timestamp with time zone`。
 
 ---
 ## 日期/时间运算符
@@ -46,9 +45,8 @@ Extreme DPS 支持许多日期/时间函数来处理日期/时间值。下面的
 
 返回当前事务开始时间戳。
 
-:::info
-`NOW` 是 `CURRENT_TIMESTAMP` 的别名。
-:::
+>info
+>`NOW` 是 `CURRENT_TIMESTAMP` 的别名。
 
 #### 语法
 
