@@ -3,9 +3,8 @@ CREATE PROCEDURE
 
 创建存储过程。
 
-:::info 重要提示
-如果查询中包含用户自定义的存储过程（通过 `CREATE PROCEDURE` 语句创建），那么该查询只能在 Hybrid DPS 集群上执行。
-:::
+>info 重要提示
+>如果查询中包含用户自定义的存储过程（通过 `CREATE PROCEDURE` 语句创建），那么该查询只能在 Hybrid DPS 集群上执行。
 
 ---
 
@@ -38,9 +37,8 @@ MAXIR 使用存储过程的名称和输入参数类型来唯一标识一个存�
 更多关于创建存储过程的信息，请参阅 PostgreSQL 文档中的 [User Defined Procedures](https://www.postgresql.org/docs/12/xproc.html)。
 
 
-:::info
-如果你想更新存储过程的名称或参数类型，删除存储过程并重新创建该存储过程。如果你尝试通过 `CREATE OR REPLACE PROCEDURE` 来完成这一操作，将会创建一个新的存储过程，而不是替换现有的存储过程。
-:::
+>info
+>如果你想更新存储过程的名称或参数类型，删除存储过程并重新创建该存储过程。如果你尝试通过 `CREATE OR REPLACE PROCEDURE` 来完成这一操作，将会创建一个新的存储过程，而不是替换现有的存储过程。
 
 ---
 
@@ -100,7 +98,7 @@ MAXIR 使用存储过程的名称和输入参数类型来唯一标识一个存�
 
     如果存储过程有一个 `SET` 子句，存储过程内部执行的任何针对同一变量的 `SET LOCAL` 命令仅适用于存储过程。一旦存储过程退出，配置参数将恢复到其原始值。然而，普通的 `SET` 命令（没有 `LOCAL`）会覆盖 `SET` 子句，就像它会覆盖以前的 `SET LOCAL` 命令一样。此命令的效果将在存储过程退出后持续，除非当前事务被回滚。
 
-    更多详情，请参阅 [SET](set.md)。
+    更多详情，请参阅 [SET](/maxir/Reference_Manual/sql-commands/set.md)。
 
 - *`<definition>`*
 
@@ -131,9 +129,9 @@ CALL insert_data(1, 2);
 使用注意事项
 -------------
 
-更多信息，请参阅 [CREATE FUNCTION](create-function.md)。
+更多信息，请参阅 [CREATE FUNCTION](/maxir/Reference_Manual/sql-commands/create-function.md)。
 
-要执行存储过程，请运行 [CALL](call.md)。
+要执行存储过程，请运行 [CALL](/maxir/Reference_Manual/sql-commands/call.md)。
 
 
 ---
@@ -141,4 +139,4 @@ CALL insert_data(1, 2);
 SQL 标准兼容性
 -------------
 
-MAXIR 中的 `CREATE PROCEDURE` 与标准 SQL 中的 `CREATE PROCEDURE` 部分兼容。关于两个版本之间的差异的详细信息，请参阅 [CREATE FUNCTION](create-function.md)。
+MAXIR 中的 `CREATE PROCEDURE` 与标准 SQL 中的 `CREATE PROCEDURE` 部分兼容。关于两个版本之间的差异的详细信息，请参阅 [CREATE FUNCTION](/maxir/Reference_Manual/sql-commands/create-function.md)。
