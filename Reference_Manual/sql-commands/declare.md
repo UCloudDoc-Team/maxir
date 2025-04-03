@@ -3,9 +3,8 @@ DECLARE
 
 定义一个游标。
 
-:::info 重要提示
-如果查询中涉及到使用 `DECLARE` 声明的游标，那么该查询只能在 Hybrid DPS 集群上执行。
-:::
+>info 重要提示
+>如果查询中涉及到使用 `DECLARE` 声明的游标，那么该查询只能在 Hybrid DPS 集群上执行。
 
 ---
 
@@ -24,11 +23,10 @@ DECLARE <name> [INSENSITIVE] [NO SCROLL] [PARALLEL RETRIEVE] CURSOR
 描述
 ----------
 
-`DECLARE` 允许用户创建一个游标，可以用来一次从更大的查询中检索少量的行。游标可以使用 [FETCH](fetch.md) 以文本格式返回数据。
+`DECLARE` 允许用户创建一个游标，可以用来一次从更大的查询中检索少量的行。游标可以使用 [FETCH](/maxir/Reference_Manual/sql-commands/fetch.md) 以文本格式返回数据。
 
-:::note
-本文描述了在 SQL 命令级别使用游标的用法。
-:::
+>note
+>本文描述了在 SQL 命令级别使用游标的用法。
 
 普通游标以文本格式返回数据，与 `SELECT` 生成的结果相同。由于数据以二进制格式本地存储，系统必须进行转换以生成文本格式。一旦信息以文本形式返回，客户端应用可能需要将其转换为二进制格式以进行操作。此外，文本格式的数据通常比二进制格式的数据大。二进制游标以可能更容易操作的二进制表示形式返回数据。然而，如果你打算将数据以文本形式显示，以文本形式检索它将节省你在客户端的一些工作。
 
@@ -36,9 +34,9 @@ DECLARE <name> [INSENSITIVE] [NO SCROLL] [PARALLEL RETRIEVE] CURSOR
 
 应谨慎使用二进制游标。许多应用，包括 psql，并未准备好处理二进制游标，并希望数据以文本格式返回。
 
-:::note
-当客户端应用使用 '扩展查询' 协议发出一个 `FETCH` 命令时，Bind 协议消息指定是否以文本或二进制格式检索数据。此选择覆盖了游标的定义方式。因此，在使用扩展查询协议时，二进制游标的概念已经过时 —— 任何游标都可以被视为文本或二进制。
-:::
+>note
+>当客户端应用使用 '扩展查询' 协议发出一个 `FETCH` 命令时，Bind 协议消息指定是否以文本或二进制格式检索数据。此选择覆盖了游标的定义方式。因此，在使用扩展查询协议时，二进制游标的概念已经过时 —— 任何游标都可以被视为文本或二进制。
+
 
 
 ---
@@ -61,13 +59,13 @@ DECLARE <name> [INSENSITIVE] [NO SCROLL] [PARALLEL RETRIEVE] CURSOR
     
     `WITH HOLD` 指定在创建游标的事务成功提交后，游标可以继续被使用。`WITHOUT HOLD` 指定游标不能在创建它的事务之外被使用。`WITHOUT HOLD` 是默认的。
 
-    :::note
-    MAXIR 不支持声明带有 `WITH HOLD` 子句的 `PARALLEL RETRIEVE` 游标。当查询包含 `FOR UPDATE` 或 `FOR SHARE` 子句时，也不能指定 `WITH HOLD`。
-    :::
+    >note
+    >MAXIR 不支持声明带有 `WITH HOLD` 子句的 `PARALLEL RETRIEVE` 游标。当查询包含 `FOR UPDATE` 或 `FOR SHARE` 子句时，也不能指定 `WITH HOLD`。
+
 
 - *`<query>`*
 
-    将提供由游标返回的行的 [SELECT](select.md) 或 [VALUES](values.md) 命令。
+    将提供由游标返回的行的 [SELECT](/maxir/Reference_Manual/sql-commands/select.md) 或 [VALUES](/maxir/Reference_Manual/sql-commands/values.md) 命令。
     
     
     - 不能引用视图或外部表。
@@ -86,9 +84,8 @@ DECLARE <name> [INSENSITIVE] [NO SCROLL] [PARALLEL RETRIEVE] CURSOR
 
         在 `SELECT` 命令中指定 `FOR UPDATE` 子句可以防止其他会话在行被获取到和更新之间更改行。如果没有 `FOR UPDATE` 子句，如果行自创建游标以来已经改变，随后使用 `WHERE CURRENT OF` 子句的 `UPDATE` 或 `DELETE` 命令将无效。
 
-        :::note
-        在 `SELECT` 命令中指定 `FOR UPDATE` 子句会锁定整个表，而不仅仅是选定的行。
-        :::
+        >note
+        >在 `SELECT` 命令中指定 `FOR UPDATE` 子句会锁定整个表，而不仅仅是选定的行。
 
 - **`FOR READ ONLY`**
 
