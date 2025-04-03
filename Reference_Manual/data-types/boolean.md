@@ -1,7 +1,3 @@
-```sql
-sidebar_position: 5
-```
-
 # 布尔类型
 
 MAXIR 支持 `boolean` 类型。`boolean` 类型状态：“真”、“假”和“未知”（输出为 null）。
