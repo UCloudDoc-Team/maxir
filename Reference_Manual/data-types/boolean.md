@@ -1,6 +1,6 @@
----
+```sql
 sidebar_position: 5
----
+```
 
 # 布尔类型
 
