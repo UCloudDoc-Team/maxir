@@ -1,7 +1,3 @@
----
-sidebar_position: 8
----
-
 # 行和数组比较
 
 Extreme DPS 允许你使用 `IN` 或 `NOT IN` 对值组进行多次比较。
