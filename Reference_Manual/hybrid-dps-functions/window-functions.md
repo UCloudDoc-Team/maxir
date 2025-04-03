@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # 窗口函数
 
 以下表格说明了 MAXIR 提供的内置窗口函数。所有的窗口函数都是 _immutable_。
