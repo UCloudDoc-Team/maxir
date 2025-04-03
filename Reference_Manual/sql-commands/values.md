@@ -39,15 +39,15 @@ VALUES ( <expression> [, ...] ) [, ...]
 
 - _`<sort_expression>`_
 
-    一个表达式或整数常量，表示如何对结果行进行排序。这个表达式可以引用 `VALUES` 结果的列，如 `column1`、`column2` 等。更多信息，请参见 [SELECT](select.md#order-by-子句) 参数中的“ORDER BY 子句”。
+    一个表达式或整数常量，表示如何对结果行进行排序。这个表达式可以引用 `VALUES` 结果的列，如 `column1`、`column2` 等。更多信息，请参见 [SELECT](/maxir/Reference_Manual/sql-commands/select.md#order-by-子句) 参数中的“ORDER BY 子句”。
 
 - _`<operator>`_
 
-    排序运算符。更多信息，请参见 [SELECT](select.md#order-by-子句) 参数中的“ORDER BY 子句”。
+    排序运算符。更多信息，请参见 [SELECT](/maxir/Reference_Manual/sql-commands/select.md#order-by-子句) 参数中的“ORDER BY 子句”。
 
 - **`LIMIT <count>`** 或 **`OFFSET <start>`**
 
-    返回的最大行数。更多信息，请参见 [SELECT](select.md#order-by-子句) 参数中的“ORDER BY 子句”。
+    返回的最大行数。更多信息，请参见 [SELECT](/maxir/Reference_Manual/sql-commands/select.md#order-by-子句) 参数中的“ORDER BY 子句”。
 
 
 
@@ -117,9 +117,8 @@ SELECT * FROM machines WHERE ip_address IN
 ('192.0.2.43'));
 ```
 
-:::note
-对于简单的 `IN` 测试，最好依赖于 `IN` 的标量列表形式，而不是编写如上所示的 `VALUES` 查询。涉及标量列表的方法需要较少的编写，并且通常更有效。
-:::
+>note
+>对于简单的 `IN` 测试，最好依赖于 `IN` 的标量列表形式，而不是编写如上所示的 `VALUES` 查询。涉及标量列表的方法需要较少的编写，并且通常更有效。
 
 
 
@@ -128,4 +127,4 @@ SELECT * FROM machines WHERE ip_address IN
 SQL 标准兼容性
 -------------
 
-`VALUES` 符合 SQL 标准。`LIMIT` 和 `OFFSET` 是 MAXIR 的扩展。也可以参见 [SELECT](select.md)。
+`VALUES` 符合 SQL 标准。`LIMIT` 和 `OFFSET` 是 MAXIR 的扩展。也可以参见 [SELECT](/maxir/Reference_Manual/sql-commands/select.md)。
