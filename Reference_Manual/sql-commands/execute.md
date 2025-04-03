@@ -18,7 +18,7 @@ EXECUTE <name> [ (<param> [, ...] ) ]
 描述
 --------
 
-如果用于创建目标预处理语句的 [PREPARE](prepare.md) 语句指定了一些参数，你必须将参数传递给 `EXECUTE` 语句。否则，将产生报错。
+如果用于创建目标预处理语句的 [PREPARE](/maxir/Reference_Manual/sql-commands/prepare.md) 语句指定了一些参数，你必须将参数传递给 `EXECUTE` 语句。否则，将产生报错。
 
 与函数不同，预处理语句不能根据其参数的类型或数量进行重载。因此，预处理语句的名称在数据库会话中必须是唯一的。
 
