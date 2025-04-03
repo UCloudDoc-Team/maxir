@@ -138,9 +138,9 @@ CREATE TABLE [IF NOT EXISTS]
 
     指定列可以包含空值。这是默认值。
 
-    :::note
-    此子句仅为兼容非标准 SQL 数据库而提供。在新应用中，不建议使用此子句。
-    :::
+    >note
+    >此子句仅为兼容非标准 SQL 数据库而提供。在新应用中，不建议使用此子句。
+  
 
 
 - **`DEFAULT <default_value>`**
@@ -169,9 +169,9 @@ CREATE TABLE [IF NOT EXISTS]
     
     注意，聚簇键列的数据类型只能是 `smallint`、`integer`、`bigint` 或 `date`。要将其他数据类型的列用作聚簇键，它们必须转换为任何支持的数据类型。
 
-    :::info
-    如命令中需要同时指定 `CLUSTER BY` 和 `DISTRIBUTED BY`，需要先指定 `DISTRIBUTED BY`。
-    :::
+    >info
+    >如命令中需要同时指定 `CLUSTER BY` 和 `DISTRIBUTED BY`，需要先指定 `DISTRIBUTED BY`。
+    
 
 - **`ASC | DESC`**
 
@@ -209,29 +209,22 @@ CREATE TABLE [IF NOT EXISTS]
 
         - **`<ttl_expression> WARM`**：表示该表为温表，表中数据会依据 *`<ttl_expression>`* 指定的冷温热策略转冷。转冷后的数据将从缓存中删除。表达式中引用的列类型只能为 `date`、`varchar` 和 `integer`。并且，如引用的列类型为非时间类型，需要通过函数转换为时间类型。
 
-            :::info 使用说明
-            `WARM` 属性可以在表级和行级生效。如需配置 `WARM` 属性在行级生效，则需保证如下两个条件同时满足：
-
-            - 建表语句中使用了 `CLUSTER BY` 子句，且该子句的第一列为 `date`、`varchar` 或 `integer` 类型。
-
-            - TTL 表达式中引用的列为 `CLUSTER BY` 子句中指定的第一列。
-            :::
+            >info 使用说明
+            >`WARM` 属性可以在表级和行级生效。如需配置 `WARM` 属性在行级生效，则需保证如下两个条件同时满足：
+            >- 建表语句中使用了 `CLUSTER BY` 子句，且该子句的第一列为 `date`、`varchar` 或 `integer` 类型。
+            >- TTL 表达式中引用的列为 `CLUSTER BY` 子句中指定的第一列。
+  
 
     - **`<delete_expression> DELETE`**
 
         数据的删除策略。删除策略可以在表级和行级生效。
 
-        :::info 使用说明
-        如需配置删除策略在行级生效，则需保证如下两个条件同时满足：
+        >info 使用说明
+        >如需配置删除策略在行级生效，则需保证如下两个条件同时满足：
+        >- 建表语句中使用了 `CLUSTER BY` 子句，且该子句的第一列为 `date`、`varchar` 或 `integer` 类型。
+        >- 删除表达式中引用的列为 `CLUSTER BY` 子句中指定的第一列。  
 
-        - 建表语句中使用了 `CLUSTER BY` 子句，且该子句的第一列为 `date`、`varchar` 或 `integer` 类型。
-
-        - 删除表达式中引用的列为 `CLUSTER BY` 子句中指定的第一列。  
-        :::
-
-    关于 `TTL` 子句的详细说明和示例，请参考 [使用 TTL 管理数据](i18n/zh-Hans/docusaurus-plugin-content-docs/current/guides/optimization/ttl.md)。
-
- 
+    关于 `TTL` 子句的详细说明和示例，请参考 [使用 TTL 管理数据](/maxir/guides/optimization/ttl.md)。
 
 ### 存储参数
 
