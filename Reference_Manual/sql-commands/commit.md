@@ -21,7 +21,7 @@ COMMIT [WORK | TRANSACTION] [ AND CHAIN | AND NO CHAIN ]
 
 在当前事务提交后，事务所做的所有更改对用户都是可见的。
 
-如果你想终止正在运行的事务，请执行 [ROLLBACK](rollback.md)。
+如果你想终止正在运行的事务，请执行 [ROLLBACK](/maxir/Reference_Manual/sql-commands/rollback.md)。
 
 如果 `COMMIT` 不在事务之内，系统将产生一个警告。如果 `COMMIT AND CHAIN` 不在事务之内，系统将产生一个错误。
 
