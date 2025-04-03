@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # 字符类型
 
 以下表格描述了 MAXIR 支持的字符类型。
