@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # 字符串函数和运算符
 
 字符串函数和运算符处理字符串输入并返回字符串或数值。Extreme DPS 支持的字符串类型是 `varchar` 和 `text`。有关字符串类型的详细说明，请参考 [字符类型](i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/data-types/character.md)。
@@ -18,9 +14,8 @@ sidebar_position: 5
 
 连接一个或多个字符串。
 
-:::info
-Null 值会被忽略。
-:::
+>info
+>Null 值会被忽略。
 
 #### 语法
 
@@ -75,9 +70,8 @@ SELECT BIT_LENGTH('Extreme DPS');
 
 返回字符串的字符数量。
 
-:::info 说明
-`CHARACTER_LENGTH` 是 `CHAR_LENGTH` 的别名。
-:::
+>info 说明
+>`CHARACTER_LENGTH` 是 `CHAR_LENGTH` 的别名。
 
 #### 语法
 
