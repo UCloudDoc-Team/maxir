@@ -68,7 +68,7 @@ where <role_spec> can be:
 参数
 ----------
 
-有关详细信息，请参见 [GRANT](grant.md#参数) 中的“参数”部分。
+有关详细信息，请参见 [GRANT](/maxir/Reference_Manual/sql-commands/grant.md#参数) 中的“参数”部分。
 
 
 ---
@@ -94,4 +94,4 @@ REVOKE role1 FROM john;
 
 SQL 标准兼容性
 -------------
-参见 [GRANT](grant.md#标准-sql-兼容性) 中的“SQL 标准兼容性“章节。
+参见 [GRANT](/maxir/Reference_Manual/sql-commands/grant.md#标准-sql-兼容性) 中的“SQL 标准兼容性“章节。
