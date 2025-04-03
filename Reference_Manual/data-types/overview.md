@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # 概述
 
 MAXIR 提供了各种原生数据类型，包括数值、日期和时间、字符和布尔类型。
@@ -28,6 +24,5 @@ MAXIR 提供了各种原生数据类型，包括数值、日期和时间、字�
 <br/>
 
 
-:::warning 重要
-MAXIR 不支持在 DDL 中定义数据类型为 `interval` 的列，因为 MAXIR 不支持存储 `interval` 类型的数据。
-:::
+>warning 重要
+>MAXIR 不支持在 DDL 中定义数据类型为 `interval` 的列，因为 MAXIR 不支持存储 `interval` 类型的数据。
