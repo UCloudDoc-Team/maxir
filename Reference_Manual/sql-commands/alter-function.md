@@ -74,23 +74,23 @@ ALTER FUNCTION <name> [ ( [ [<arg_mode>] [<arg_name>] <arg_type> [, ...] ] ) ]
    对函数执行的操作，支持的操作包括：
    - `CALLED ON NULL INPUT | RETURNS NULL ON NULL INPUT | STRICT`：确定函数是否可以在其有 null 参数时被调用。`CALLED ON NULL INPUT` 表示可以调用，`RETURNS NULL ON NULL INPUT` 或 `STRICT` 表示不可以调用。
    
-      更多信息，请参考 [CREATE FUNCTION](create-function.md)。
+      更多信息，请参考 [CREATE FUNCTION](/maxir/Reference_Manual/sql-commands/create-function.md)。
 
    - `IMMUTABLE`、`STABLE` 或 `VOLATILE`：指定函数的易变性。
 
-      更多信息，请参考 [CREATE FUNCTION](create-function.md)。
+      更多信息，请参考 [CREATE FUNCTION](/maxir/Reference_Manual/sql-commands/create-function.md)。
 
    - `[EXTERNAL] SECURITY INVOKER | [EXTERNAL] SECURITY DEFINER`：指定函数是否为安全定义者 (Security Definer)。关键词 `EXTERNAL` 可以忽略。 
    
-      更多信息，请查看 [CREATE FUNCTION](create-function.md)。
+      更多信息，请查看 [CREATE FUNCTION](/maxir/Reference_Manual/sql-commands/create-function.md)。
 
    - `PARALLEL`：指定函数是否被认为是安全并行执行函数。
    
-      更多信息，请查看 [CREATE FUNCTION](create-function.md)。
+      更多信息，请查看 [CREATE FUNCTION](/maxir/Reference_Manual/sql-commands/create-function.md)。
 
    - `COST`：指定函数的预估执行成本。 
    
-      更多信息，请查看 [CREATE FUNCTION](create-function.md)。
+      更多信息，请查看 [CREATE FUNCTION](/maxir/Reference_Manual/sql-commands/create-function.md)。
 
    - `SET` 或 `RESET`：指定当函数被调用时配置参数 _`<config_param>`_ 的 _`<value>`_。如果 `SET` 选项的值为 `DEFAULT` 或使用 `RESET` 选项，则删除函数范围的设置并使用环境中的值替代。如果你指定 `SET ... FROM CURRENT`，则当你运行 `ALTER FUNCTION` 时参数的当前值将被用作函数的值。如果你想清除所有特定于函数的设置，使用 `RESET ALL`。 
 
