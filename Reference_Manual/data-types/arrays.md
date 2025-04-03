@@ -42,15 +42,10 @@ CREATE TABLE array_test (
 
 - 也可以通过数据类型名后跟 `ARRAY` 关键字来命名，例如示例中的 `integer ARRAY`、`decimal(10,5) ARRAY`。
 
-:::caution 在声明数组时，需要注意:
-
-- 使用 `ARRAY` 关键字时，如果关键字后跟 `[]`，则 `[]` 中必须有具体数字。例如，MAXIR 支持 `integer ARRAY[1]`，但是不支持 `integer ARRAY[1]`。
-
-- 使用 `ARRAY` 关键字声明数组类型时，只支持一维数组。
-
-- 方括号（`[]`）中的数字表示当前维度中数组的长度，不过数组长度只做展示用，实际写入长度不受该数字影响。
-:::
-
+>**caution 在声明数组时，需要注意:**
+>- 使用 `ARRAY` 关键字时，如果关键字后跟 `[]`，则 `[]` 中必须有具体数字。例如，MAXIR 支持 `integer ARRAY[1]`，但是不支持 `integer ARRAY[1]`。
+>- 使用 `ARRAY` 关键字声明数组类型时，只支持一维数组。
+>- 方括号（`[]`）中的数字表示当前维度中数组的长度，不过数组长度只做展示用，实际写入长度不受该数字影响。
 <br/>
 
 
@@ -105,9 +100,9 @@ SELECT f4[2:3] FROM array_test;
 
 <br/>
 
-:::caution 注意
-当前，Hybrid DPS 暂不支持数据切片访问。
-:::
+>caution 注意
+>当前，Hybrid DPS 暂不支持数据切片访问。
+
 
 <br/>
 
@@ -219,9 +214,9 @@ SELECT f3[1:][1:][3:3] FROM array3d_test;
 
 <br/>
 
-:::caution 注意
-当前，Hybrid DPS 暂不支持数据切片访问。
-:::
+>caution 注意
+>当前，Hybrid DPS 暂不支持数据切片访问。
+
 
 <br/>
 
@@ -319,7 +314,6 @@ SELECT * FROM test;
 ```
 
 <br/>
----
 
 
 ## 使用 Hybrid DPS 进行切片访问
