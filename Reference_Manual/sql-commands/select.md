@@ -235,7 +235,7 @@ ORDER BY location
 
 - *`<select>`*
 
-  一个子 `SELECT` 可以出现在 `FROM` 子句中。这就好像它的输出在这个单独的 `SELECT` 命令的期间被创建为一个临时表一样。注意，子 `SELECT` 必须用括号括起来，并且必须为它提供一个别名。 [VALUES](values.md) 命令也可以在这里使用。请参见 [SQL 标准兼容性](#sql-标准兼容性) 部分的“非标准子句”以了解在 MAXIR 中使用相关子选择的限制。
+  一个子 `SELECT` 可以出现在 `FROM` 子句中。这就好像它的输出在这个单独的 `SELECT` 命令的期间被创建为一个临时表一样。注意，子 `SELECT` 必须用括号括起来，并且必须为它提供一个别名。 [VALUES](/maxir/Reference_Manual/sql-commands/values.md) 命令也可以在这里使用。请参见 [SQL 标准兼容性](#sql-标准兼容性) 部分的“非标准子句”以了解在 MAXIR 中使用相关子选择的限制。
 
 - *`<with_query_name>`*
 
@@ -378,9 +378,8 @@ MAXIR 有以下附加的 OLAP 分组扩展（通常被称为 _supergroups_）：
   - **group_id()** 
     对于包含重复分组集的分组扩展查询， `group_id` 函数用于在输出中标识重复的行。所有 _唯一_ 的分组集输出行将具有 `<group_id>` 值为 0。对于检测到的每个重复分组集， `group_id` 函数将指定一个大于 0 的 `<group_id>` 数字。所有特定重复分组集中的输出行都由相同的 `<group_id>` 数字标识。
 
-    :::warning 重要
-    Extreme DPS 不支持 `group_id`。如查询中包含 `group_id`，请选择 Hybrid PDS 集群执行。  
-    :::
+    >warning 重要
+    >Extreme DPS 不支持 `group_id`。如查询中包含 `group_id`，请选择 Hybrid PDS 集群执行。  
 
 
  
@@ -404,15 +403,13 @@ WINDOW <window_name> AS (<window_definition>)
 ```
 
 
-:::note
-*`<window_name>`* 也可以用作 *`<window_definition>`*。但是当用作 *`<window_definition>`* 时，新的窗口定义中，只会继承其中的 `PARTITION BY` 和 `ORDER BY`。新窗口不能更改或覆盖原有的分区或排序方式，它只能在此基础上进行补充。
-:::
+>note
+>*`<window_name>`* 也可以用作 *`<window_definition>`*。但是当用作 *`<window_definition>`* 时，新的窗口定义中，只会继承其中的 `PARTITION BY` 和 `ORDER BY`。新窗口不能更改或覆盖原有的分区或排序方式，它只能在此基础上进行补充。
 
  
 
-:::warning Extreme DPS 的使用限制
-Extreme DPS 不支持 *`<window_name>`*，只能通过 `OVER` 子句中指定窗口定义。
-:::
+>warning Extreme DPS 的使用限制
+>Extreme DPS 不支持 *`<window_name>`*，只能通过 `OVER` 子句中指定窗口定义。
 
  
 
@@ -446,9 +443,8 @@ WINDOW mywindow AS (ORDER BY sum(prc*qty));
 
   同样，`ORDER BY` 列表的元素的解读方式与 [`ORDER BY` 子句](#order-by-子句) 的元素大致相同，只是表达式只能是简单表达式，而不是输出列的名称或数字。
 
-  :::note
-  `ORDER BY` 子句的元素定义了如何对结果集的每个分区中的行进行排序。如果省略，行将以最高效的顺序返回，并可能有所不同。
-  :::
+  >note
+  >`ORDER BY` 子句的元素定义了如何对结果集的每个分区中的行进行排序。如果省略，行将以最高效的顺序返回，并可能有所不同。
 
 
 - *`<frame_clause>`*
@@ -460,10 +456,9 @@ WINDOW mywindow AS (ORDER BY sum(prc*qty));
   { RANGE | ROWS | GROUPS } BETWEEN <frame_start> AND <frame_end> [ <frame_exclusion> ]
   ```    
 
-  :::warning Extreme DPS 的使用限制
-  - Extreme DPS 当前不支持 *`<frame_exclusion>`*。
-  - Extreme DPS 当前暂不支持 `GROUPS`。
-  :::  
+  >warning Extreme DPS 的使用限制
+  >- Extreme DPS 当前不支持 *`<frame_exclusion>`*。
+  >- Extreme DPS 当前暂不支持 `GROUPS`。  
 
   其中 _`<frame_start>`_ 和 _`<frame_end>`_ 可以是以下之一：
 
@@ -475,9 +470,9 @@ WINDOW mywindow AS (ORDER BY sum(prc*qty));
   UNBOUNDED FOLLOWING
   ```
 
-  :::warning Extreme DPS 的使用限制
-  当使用的计算引擎为 Extreme DPS 时，只有在帧模式为 `ROWS` 的前提下，_`<frame_start>`_ 或 _`<frame_end>`_ 可以设置为 `<offset> PRECEDING` 或 `<offset> FOLLOWING`。
-  :::       
+  >warning Extreme DPS 的使用限制
+  >当使用的计算引擎为 Extreme DPS 时，只有在帧模式为 `ROWS` 的前提下，_`<frame_start>`_ 或 _`<frame_end>`_ 可以设置为 `<offset> PRECEDING` 或 `<offset> FOLLOWING`。
+         
 
   而 *`<frame_exclusion>`* 可以是以下之一：
 
@@ -845,9 +840,8 @@ MAXIR 认为这些括号是可选的。
 
 MAXIR 允许在末尾写一个 `*`，以明确指定包含子表的非 `ONLY` 行为。标准不允许这样做。
 
-:::note
-以上各点同样适用于所有支持 `ONLY` 选项的 SQL 命令。
-:::
+>note
+>以上各点同样适用于所有支持 `ONLY` 选项的 SQL 命令。
 
 **GROUP BY 和 ORDER BY 可用的命名空间**
 
