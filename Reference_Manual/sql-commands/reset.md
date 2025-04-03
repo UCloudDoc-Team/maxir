@@ -20,7 +20,7 @@ RESET ALL
 描述
 ----------
 
-`RESET` 等效于 `SET <config_param> TO DEFAULT`。如果事务被回滚，`RESET` 在事务中的效果将被恢复。这也与 `SET` 相同。有关更多详细信息，请参见 [SET](set.md)。
+`RESET` 等效于 `SET <config_param> TO DEFAULT`。如果事务被回滚，`RESET` 在事务中的效果将被恢复。这也与 `SET` 相同。有关更多详细信息，请参见 [SET](/maxir/Reference_Manual/sql-commands/set.md)。
 
 参数的默认值是如果在当前会话中没有为参数 `SET` 值，则会自动分配给参数的值。这样的值可以来自编译时的默认值，`postgresql.conf` 配置文件，命令行选项，或数据库或用户的默认设置。
 
