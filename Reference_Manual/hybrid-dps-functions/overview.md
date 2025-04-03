@@ -1,11 +1,7 @@
----
-sidebar_position: 1
----
-
 
 # 概览
 
-MAXIR 支持[内置函数和运算符](builtin-functions.md) ，包括可以在窗口表达式中使用的[窗口函数](window-functions.md)。MAXIR 支持的函数可以分为以下三种类型：
+MAXIR 支持[内置函数和运算符](/maxir/Reference_Manual/hybrid-dps-functions/builtin-functions.md) ，包括可以在窗口表达式中使用的[窗口函数](/maxir/Reference_Manual/hybrid-dps-functions/window-functions.md)。MAXIR 支持的函数可以分为以下三种类型：
 
 
 | 函数类型 | 是否支持 | 描述 | 备注 |
