@@ -63,7 +63,7 @@ CREATE [OR REPLACE] [RECURSIVE] VIEW <name> [ ( <column_name> [, ...] ) ]
 
     - *`<check_option>`* (string)
 
-        此参数可以是 `local` 或 `cascaded`，等同于指定 `WITH [ CASCADED | LOCAL ] CHECK OPTION`（见下文）。此选项可以使用 [ALTER VIEW](alter-view.md) 在现有视图上更改。
+        此参数可以是 `local` 或 `cascaded`，等同于指定 `WITH [ CASCADED | LOCAL ] CHECK OPTION`（见下文）。此选项可以使用 [ALTER VIEW](/maxir/Reference_Manual/sql-commands/alter-view.md) 在现有视图上更改。
 
     - *`<security_barrier>`* (boolean)
 
@@ -71,7 +71,7 @@ CREATE [OR REPLACE] [RECURSIVE] VIEW <name> [ ( <column_name> [, ...] ) ]
 
 - *`<query>`*
 
-    将提供视图的列和行的 [SELECT](select.md) 或 [VALUES](values.md) 命令。
+    将提供视图的列和行的 [SELECT](/maxir/Reference_Manual/sql-commands/select.md) 或 [VALUES](/maxir/Reference_Manual/sql-commands/values.md) 命令。
 
 
 ---
@@ -89,9 +89,9 @@ FROM sales
 WHERE year = 2022;
 ```
 
-:::note
- 在命令执行后添加到表中的列将不会包含在视图中。
-:::
+>note
+>在命令执行后添加到表中的列将不会包含在视图中。
+
 
 创建一个获取排名前十的婴儿名字的视图：
 
@@ -111,9 +111,8 @@ UNION ALL
     SELECT n+1 FROM nums_1_100 WHERE n < 100;
 ```
 
-:::note
-虽然在此 `CREATE VIEW` 命令中，递归视图的名称是 Schema 限定的，但其内部自引用不是 Schema 限定的。这是因为隐式创建的公共表表达式（CTE）的名称不能是 Schema 限定的。
-:::
+>note
+>虽然在此 `CREATE VIEW` 命令中，递归视图的名称是 Schema 限定的，但其内部自引用不是 Schema 限定的。这是因为隐式创建的公共表表达式（CTE）的名称不能是 Schema 限定的。
 
 
 ---
