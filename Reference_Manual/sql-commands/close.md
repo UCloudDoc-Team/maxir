@@ -21,9 +21,8 @@ CLOSE <cursor_name>;
 
 当事务通过 `COMMIT` 或 `ROLLBACK` 被终止后，所有非保持式开放游标都会被隐式关闭。当事务通过 `COMMIT` 停止时，事务创建的开放游标会被隐式关闭。当事务成功提交时，事务创建的保持式游标仍然开放，直到运行 `CLOSE` 或客户端断开连接。
 
-:::info
-在 MAXIR 中，使用 `DECLARE` 声明的游标默认是开放的，因为 MAXIR 不提供游标的 `OPEN` 语句。
-:::
+>info
+>在 MAXIR 中，使用 `DECLARE` 声明的游标默认是开放的，因为 MAXIR 不提供游标的 `OPEN` 语句。
 
 ---
 
