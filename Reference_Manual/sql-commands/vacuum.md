@@ -25,7 +25,7 @@ VACUUM [FULL] [FREEZE] [VERBOSE] ANALYZE
 `VACUUM` 回收被删除元组占用的存储空间。在正常的 MAXIR 操作中，被删除或通过更新过时的元组并未从其表中物理删除。它们仍然存在于硬盘上，直到进行 `VACUUM`。因此，需要定期进行 `VACUUM`，尤其是在经常更新的表上。
 
 没有参数，`VACUUM` 处理当前数据库中的每个表。有参数，`VACUUM` 仅处理该表。
-`VACUUM ANALYZE` 对每个选定的表执行 `VACUUM`，然后进行 `ANALYZE`。这是常规维护脚本的方便组合形式。有关其处理的更多详细信息，请参见 [ANALYZE](analyze.md)。
+`VACUUM ANALYZE` 对每个选定的表执行 `VACUUM`，然后进行 `ANALYZE`。这是常规维护脚本的方便组合形式。有关其处理的更多详细信息，请参见 [ANALYZE](/maxir/Reference_Manual/sql-commands/analyze.md)。
 
 
 ---
