@@ -30,13 +30,12 @@ MOVE [ <forward_direction> [ FROM | IN ] ] <cursor_name>
 描述
 --------
 
-与 [FETCH](fetch.md) 不同，`MOVE` 不检索数据也不返回行。
+与 [FETCH](/maxir/Reference_Manual/sql-commands/fetch.md) 不同，`MOVE` 不检索数据也不返回行。
 
 MAXIR 不支持可滚动的游标。因此，`MOVE` 只能用来将游标向前移动。
 
-:::note
-你不能使用 `MOVE` 来重新定位并行检索游标。
-:::
+>note
+>你不能使用 `MOVE` 来重新定位并行检索游标。
 
 
 ---
@@ -44,7 +43,7 @@ MAXIR 不支持可滚动的游标。因此，`MOVE` 只能用来将游标向前�
 参数
 ----------
 
-参数与 `FETCH` 语句的参数相同。有关更多详细信息，请参阅 [FETCH](fetch.md#参数) 中的 "参数" 部分。
+参数与 `FETCH` 语句的参数相同。有关更多详细信息，请参阅 [FETCH](/maxir/Reference_Manual/sql-commands/fetch.md#参数) 中的 "参数" 部分。
 
 
 ---
