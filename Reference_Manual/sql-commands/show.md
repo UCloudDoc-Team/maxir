@@ -21,9 +21,8 @@ SHOW ALL
 
 你可以使用 `SHOW` 检查通过 `SET`、编辑 `postgresql.conf` 配置文件或通过 `PGOPTIONS` 环境变量设置的运行时配置参数的当前设置。
 
-:::info
-你可以使用函数 `current_setting()`（参见 PostgreSQL 文档中的[System Administration Functions](https://www.postgresql.org/docs/12/functions-admin.html)了解详情）或系统视图 [pg_setting](https://www.postgresql.org/docs/12/view-pg-settings.html) 作为 `SHOW` 的替代方案。
-:::
+>info
+>你可以使用函数 `current_setting()`（参见 PostgreSQL 文档中的[System Administration Functions](https://www.postgresql.org/docs/12/functions-admin.html)了解详情）或系统视图 [pg_setting](https://www.postgresql.org/docs/12/view-pg-settings.html) 作为 `SHOW` 的替代方案。
 
 ---
 参数
