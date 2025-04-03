@@ -30,18 +30,16 @@ UPDATE [ ONLY ] <table_name> [ [ AS ] <alias> ]
 
 `UPDATE` 更改满足条件的所有行中指定列的值。只需要在 `SET` 子句中提到要修改的列。未明确修改的列保留其以前的值。
 
-:::warning 注意
-关于 `SET` 子句，Hybrid DPS 和 Extreme DPS 的支持程度不同。关于 Extreme DPS 在 `UPDATE ... SET` 语句上的使用限制，请参考 [使用注意事项](#使用注意事项)。
-:::
+>warning 注意
+>关于 `SET` 子句，Hybrid DPS 和 Extreme DPS 的支持程度不同。关于 Extreme DPS 在 `UPDATE ... SET` 语句上的使用限制，请参考 [使用注意事项](#使用注意事项)。
 
 
 `UPDATE` 语句支持两种方式使用数据库中其他表的信息来修改表：一种是使用子 `SELECT` 语句，另一种是在 `FROM` 子句中指定额外的表。具体使用哪一种方式，请根据实际情况进行选择。
 
 你必须具备表的 `UPDATE` 权限，或者至少具备对要更新的列的 `UPDATE` 权限。同时，对在表达式或条件中读取值的任意列，你还必须具备 `SELECT` 权限。
 
-:::note
-默认情况下，MAXIR 在堆表的 `UPDATE` 操作上获取 `EXCLUSIVE` 锁。当启用全局死锁检测器时，堆表的 `UPDATE` 操作的锁模式为 `ROW EXCLUSIVE`。
-:::
+>note
+>默认情况下，MAXIR 在堆表的 `UPDATE` 操作上获取 `EXCLUSIVE` 锁。当启用全局死锁检测器时，堆表的 `UPDATE` 操作的锁模式为 `ROW EXCLUSIVE`。
 
 ---
 
