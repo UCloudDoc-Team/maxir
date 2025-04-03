@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # 比较函数和运算符
 
 比较函数和运算符会在两个表达式之间进行计算，生成布尔值或在状态未知的情况下返回 `null`。
@@ -22,9 +18,8 @@ sidebar_position: 3
 
 <br/>
 
-:::warning 使用限制
-在 Extreme DPS 中，比较计算符 `<`、`>`、`<=` 和 `>=` 的输入类型不能为 `interval`。
-:::
+>warning 使用限制
+>在 Extreme DPS 中，比较计算符 `<`、`>`、`<=` 和 `>=` 的输入类型不能为 `interval`。
 
 ## 比较谓词
 
@@ -41,8 +36,8 @@ sidebar_position: 3
 
 <br/>
 
-:::warning 使用限制
-Extreme DPS 对比较谓词的输入类型有一些限制：
-- `BETWEEN`、`NOT BETWEEN`、`IS NULL` 和 `IS NOT NULL` 的输入类型不能为 `interval`。
-- `IS DISTINCT FROM` 和 `IS NOT DISTINCT FROM` 的输入类型不能为 `interval`。
-::: 
+>warning 使用限制
+>Extreme DPS 对比较谓词的输入类型有一些限制：
+>- `BETWEEN`、`NOT BETWEEN`、`IS NULL` 和 `IS NOT NULL` 的输入类型不能为 `interval`。
+>- `IS DISTINCT FROM` 和 `IS NOT DISTINCT FROM` 的输入类型不能为 `interval`。
+ 
