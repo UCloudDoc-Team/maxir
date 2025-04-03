@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # 数学函数和运算符
 
 数学函数和运算符对一个或两个输入表达式进行求值，产生一个数值结果。
@@ -62,9 +58,8 @@ sidebar_position: 4
 
 Extreme DPS 支持使用 `random()` 来生成从 `0.0` 到 `1.0` 的随机 `double precision` 数。
 
-:::note
-函数 `random()` 使用了一个简单的线性同余算法。虽然 `random()` 计算速度很快，但它不适用于密码应用。
-:::
+>note
+>函数 `random()` 使用了一个简单的线性同余算法。虽然 `random()` 计算速度很快，但它不适用于密码应用。
 
 
 ---
@@ -74,9 +69,8 @@ Extreme DPS 支持使用 `random()` 来生成从 `0.0` 到 `1.0` 的随机 `doub
 
 下表列出了 Extreme DPS 提供的三角函数。
 
-:::info
-以下三角函数的输入类型只能是 `double precision`，每个函数的返回类型都是 `double precision`。
-:::
+>info
+>以下三角函数的输入类型只能是 `double precision`，每个函数的返回类型都是 `double precision`。
 
 <br/>
 
@@ -106,9 +100,8 @@ Extreme DPS 支持使用 `random()` 来生成从 `0.0` 到 `1.0` 的随机 `doub
 
 下表列出了 Extreme DPS 提供的双曲函数。
 
-:::info
-以下双曲函数的输入类型只能是 `double precision`，每个函数的返回类型都是 `double precision`。 
-:::
+>info
+>以下双曲函数的输入类型只能是 `double precision`，每个函数的返回类型都是 `double precision`。 
 
 <br/>
 
