@@ -2,9 +2,8 @@
 
 创建函数。
 
-:::info 重要提示
-如果查询中包含用户自定义函数（通过 `CREATE FUNCTION` 语句创建），那么该查询只能在 Hybrid DPS 集群上执行。
-:::
+>info 重要提示
+>如果查询中包含用户自定义函数（通过 `CREATE FUNCTION` 语句创建），那么该查询只能在 Hybrid DPS 集群上执行。
 
 ---
 
@@ -45,11 +44,10 @@ MAXIR 通过函数名称和输入参数类型来唯一标识函数。因此，�
 
 更多关于创建函数的信息，参考 PostgreSQL 文档中的 [User Defined Functions](https://www.postgresql.org/docs/12/xfunc.html)。
 
-:::info
-如需更新函数的名称或参数类型，请先删除函数并重新创建。如果使用 `CREATE OR REPLACE UFNCTION`，将创建一个新函数，而不是替换现有函数。
+>info
+>如需更新函数的名称或参数类型，请先删除函数并重新创建。如果使用 `CREATE OR REPLACE UFNCTION`，将创建一个新函数，而不是替换现有函数。
+>`CREATE OR REPLACE FUNCTION` 不能用于更新函数的返回类型。
 
-`CREATE OR REPLACE FUNCTION` 不能用于更新函数的返回类型。
-:::
 
 ---
 
@@ -189,7 +187,7 @@ MAXIR 通过函数名称和输入参数类型来唯一标识函数。因此，�
 
     如果函数有一个 `SET` 子句，任何在函数内部为同一变量执行的 `SET LOCAL` 命令只适用于该函数。一旦函数退出，配置参数将恢复其原始值。然而，一个普通的 `SET` 命令（没有 `LOCAL`）会覆盖 `SET` 子句，就像它会覆盖前一个 `SET LOCAL` 命令一样。这个命令的效果在函数退出后会持续，除非当前事务被回滚。
 
-    有关更多信息，请参阅 [SET](set.md)。
+    有关更多信息，请参阅 [SET](/maxir/Reference_Manual/sql-commands/set.md)。
 
 - *`<definition>`*
 
@@ -251,7 +249,7 @@ $$  LANGUAGE plpgsql
     SET search_path = admin, pg_temp;
 ```
 
-默认情况下，新函数被赋予 `PUBLIC` 的执行权限。更多详细内容，请见 [GRANT](grant.md)。出于安全考虑，你可能希望将安全定义者函数的使用限制在特定用户上。为此，你需要撤销 `PUBLIC` 的执行权限，然后有选择性地将其授予期望的用户。为了防止函数对所有人可用，我们建议你在一个单独的事务中创建并设置权限。例如：
+默认情况下，新函数被赋予 `PUBLIC` 的执行权限。更多详细内容，请见 [GRANT](/maxir/Reference_Manual/sql-commands/grant.md)。出于安全考虑，你可能希望将安全定义者函数的使用限制在特定用户上。为此，你需要撤销 `PUBLIC` 的执行权限，然后有选择性地将其授予期望的用户。为了防止函数对所有人可用，我们建议你在一个单独的事务中创建并设置权限。例如：
 
 ```sql
 BEGIN;
