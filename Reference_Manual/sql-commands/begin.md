@@ -42,7 +42,7 @@ BEGIN [WORK | TRANSACTION] [<transaction_mode>]
 使用注意事项
 ----------
 
-如需终止一个事务块，执行 [COMMIT](commit.md) 或 [ROLLBACK](rollback.md)。
+如需终止一个事务块，执行 [COMMIT](/maxir/Reference_Manual/sql-commands/commit.md) 或 [ROLLBACK](/maxir/Reference_Manual/sql-commands/rollback.md)。
 
 在事务块内进行 `BEGIN` 操作，系统会产生一条警告，但是不影响事务的状态。 
 
