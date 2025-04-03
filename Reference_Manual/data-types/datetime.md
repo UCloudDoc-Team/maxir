@@ -12,9 +12,9 @@ MAXIR 支持主要的日期和时间数据类型，如下表所示。
 
 <br/>
 
-:::warning 重要
-MAXIR 不支持在 DDL 中定义数据类型为 `interval` 的列，因为 MAXIR 不支持存储 `interval` 类型的数据。
-:::
+>warning 重要
+>MAXIR 不支持在 DDL 中定义数据类型为 `interval` 的列，因为 MAXIR 不支持存储 `interval` 类型的数据。
+
 
 
 
@@ -28,14 +28,11 @@ MAXIR 不支持在 DDL 中定义数据类型为 `interval` 的列，因为 MAXIR
 
 日期/时间类型的输出样式因使用的客户端而异，本文不做展开。
 
-:::note 说明
-- `timestamptz` 可以作为 `timestamp with time zone` 的缩写使用。
-
-- 日期按照公历来计算，即使是引入公历之前的年份。更多详细信息，请参考 PostgreSQL 文档中的 [History of Units](https://www.postgresql.org/docs/current/datetime-units-history.html)。
-:::
+>note 说明
+>- `timestamptz` 可以作为 `timestamp with time zone` 的缩写使用。
+>- 日期按照公历来计算，即使是引入公历之前的年份。更多详细信息，请参考 PostgreSQL 文档中的 [History of Units](https://www.postgresql.org/docs/current/datetime-units-history.html)。
 
 
----
 
 ## 日期
 
@@ -58,9 +55,8 @@ MAXIR 支持两种时间戳类型：`timestamp with time zone` 和 `timestamp`�
 如果你在 `timestamp with time zone` 类型和 `timestamp` 类型之间转换值，`timestamp` 值通常被视为时区的本地时间。 
 
 
-:::warning 重要
-MAXIR 不允许使用大写字母 `T` 来连接值中的日期部分和时间部分，请使用空格代替。
-:::
+>warning 重要
+>MAXIR 不允许使用大写字母 `T` 来连接值中的日期部分和时间部分，请使用空格代替。
 
 <br/>
 
@@ -140,9 +136,8 @@ SELECT timestamptz '2024-01-15 12:00:00+06:00';
  2024-01-15 06:00:00+00
 (1 row)
 ```
-:::note
-此示例中，会话时区设置为 `UTC`。
-:::
+>note
+>此示例中，会话时区设置为 `UTC`。
 
 <br/>
 
@@ -163,9 +158,8 @@ SELECT timestamptz '2024-01-15 12:00:00+00';
 (1 row)
 ```
 
-:::note
-此示例中，会话时区设置为 `Asia/Shanghai`。
-:::
+>note
+>此示例中，会话时区设置为 `Asia/Shanghai`。
 
 <br/>
 
@@ -193,9 +187,8 @@ SELECT CAST('2024-01-15 12:00:00+06:00' AS timestamptz);
 (1 row)
 ```
 
-:::note
-此示例中，会话时区设置为 `UTC`。
-:::
+>note
+>此示例中，会话时区设置为 `UTC`。
 
 <br/>
 
@@ -227,9 +220,9 @@ SELECT CAST('2024-01-15 12:00:00+06:00' AS timestamptz);
     (1 row)
     ```
 
-    :::note
-    此示例中，会话时区设置为 `UTC`。
-    :::
+    >note
+    >此示例中，会话时区设置为 `UTC`。
+  
 
 2. 时间格式转换为字符串
 
@@ -247,9 +240,9 @@ SELECT CAST('2024-01-15 12:00:00+06:00' AS timestamptz);
     2024-01-15 10:00:00+08:00
     (1 row)
     ```
-    :::note
-    此示例中，会话时区设置为`'+8'`。
-    :::
+    >note
+    >此示例中，会话时区设置为`'+8'`。
+   
 
 <br/>
 
@@ -285,9 +278,9 @@ SELECT CAST('2024-01-15 12:00:00+06:00' AS timestamptz);
      2024-02-25 03:00:00-07
     (1 row)
     ```
-    :::note
-    此示例中，会话时区设置为 `'+07'`。
-    :::
+    >note
+    >此示例中，会话时区设置为 `'+07'`。
+   
 
 
 
@@ -319,9 +312,8 @@ SELECT CAST('2024-01-15 12:00:00+06:00' AS timestamptz);
      2024-02-25 17:00:00+07
     (1 row)    
     ```
-    :::note
-    此示例中，会话时区设置为 `'+07:00'` 。
-    :::
+    >note
+    >此示例中，会话时区设置为 `'+07:00'` 。
 
 
 **场景 6**：`AT TIME ZONE` 命令中的时区
@@ -367,9 +359,8 @@ SELECT timestamp '2024-01-10 12:00:00' at time zone '+08:00';
 ```
 
 
-:::note
-此示例中，会话时区设置为 `UTC`。
-:::
+>note
+>此示例中，会话时区设置为 `UTC`。
 
 
 ---
