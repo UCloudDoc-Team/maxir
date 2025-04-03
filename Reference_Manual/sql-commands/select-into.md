@@ -33,9 +33,8 @@ SELECT [ALL | DISTINCT [ON ( <expression> [, ...] )]]
 
 当你使用 `SELECT INTO` 创建表时，填充在表中的数据是查询的结果。因此，表中每一列的名称和数据类型与查询结果中的对应列的名称和数据类型相同。然而，MAXIR 不建议你使用 `SELECT INTO` 来创建表。
 
-:::note
-查询的结果不返回给客户端。
-:::
+>note
+>查询的结果不返回给客户端。
 
 ---
 
@@ -44,7 +43,7 @@ SELECT [ALL | DISTINCT [ON ( <expression> [, ...] )]]
 
 *`<new_table>`*：要创建的表的名称。你可以在名称前加上 Schema 名称。
 
-关于其他参数的信息，请参见 [SELECT](select.md#参数) 中的“参数”部分。
+关于其他参数的信息，请参见 [SELECT](/maxir/Reference_Manual/sql-commands/select.md#参数) 中的“参数”部分。
 
 
 ---
