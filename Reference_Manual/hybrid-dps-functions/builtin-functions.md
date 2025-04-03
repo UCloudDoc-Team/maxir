@@ -1,12 +1,3 @@
-```sql
----
-sidebar_position: 2
----
-```
-
-
-
-
 # 内置函数和运算符
 
 以下表格列出了 MAXIR 支持的内置函数和运算符的类别。MAXIR 支持所有的函数和运算符，除了 `STABLE` 和 `VOLATILE` 函数，这些函数受到 MAXIR Function Types 中所述的限制。有关这些内置函数和运算符的更多信息，请参阅 PostgreSQL 文档的 [Functions and Operators](https://www.postgresql.org/docs/12/functions.html) 部分。
