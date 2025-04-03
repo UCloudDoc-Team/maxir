@@ -22,7 +22,7 @@ END [WORK | TRANSACTION] [AND CHAIN | AND NO CHAIN ]
 通过 `END` 提交当前事务后，事务所做的所有更改对其他用户可见，并且如果系统崩溃，这些更改将保持持久性。
 
 
-此语句等效于 [COMMIT](commit.md)。要终止事务而不是提交事务，使用 [ROLLBACK](rollback.md)。
+此语句等效于 [COMMIT](/maxir/Reference_Manual/sql-commands/commit.md)。要终止事务而不是提交事务，使用 [ROLLBACK](/maxir/Reference_Manual/sql-commands/rollback.md)。
 
 当你在事务外部运行 `END` 时，将会显示警告消息，但操作没有不良影响。
 
