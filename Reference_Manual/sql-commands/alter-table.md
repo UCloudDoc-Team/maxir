@@ -94,7 +94,7 @@ ALTER TABLE [IF EXISTS] <name>
 
         如果此表是一个分区，当该表在父表中被标记为 `NOT NULL` 时，则不能在列上执行 `DROP NOT NULL`。要从所有分区中删除 `NOT NULL` 约束，需要在父表上执行 `DROP NOT NULL`。即使父表上没有 `NOT NULL` 约束，也可以根据需要将此类约束添加到各个分区上，即在父表允许空值的情况下，可以在子表上禁止空值的使用。
 
-    - `ALTER [COLUMN] ... SET STATISTICS`：为后续的 [ANALYZE](analyze.md) 操作设置每列的统计信息收集目标。目标可以设置在 0 到 10000 的范围内，或设置为 -1 以恢复使用系统默认的统计目标 `default_statistics_target`。当设置为 0 时，不收集任何统计信息。
+    - `ALTER [COLUMN] ... SET STATISTICS`：为后续的 [ANALYZE](/maxir/Reference_Manual/sql-commands/analyze.md) 操作设置每列的统计信息收集目标。目标可以设置在 0 到 10000 的范围内，或设置为 -1 以恢复使用系统默认的统计目标 `default_statistics_target`。当设置为 0 时，不收集任何统计信息。
 
         `SET STATISTICS` 获取 `SHARE UPDATE EXCLUSIVE` 锁。
 
@@ -164,9 +164,9 @@ MAXIR 提供了在单个 `ALTER TABLE` 中指定多个更改的选项，以便�
 
 此表列出了在对指定类型的表存储定义的表上执行时需要表重写的 `ALTER TABLE` 操作。
 
-:::caution
-执行表重写的 `ALTER TABLE` 形式不是 MVCC 安全的。在表重写之后，如果它们使用的是重写发生之前的快照，那么并发事务将看到的表是空的。更多详情，请参考 [MVCC Caveats](https://www.postgresql.org/docs/12/mvcc-caveats.html)。
-:::
+>caution
+>执行表重写的 `ALTER TABLE` 形式不是 MVCC 安全的。在表重写之后，如果它们使用的是重写发生之前的快照，那么并发事务将看到的表是空的。更多详情，请参考 [MVCC Caveats](https://www.postgresql.org/docs/12/mvcc-caveats.html)。
+
 
 
 如果表有任何子表，那么不允许在父表中添加、重命名或更改列的类型，而不对子表做同样的处理。这确保了子表始终具有与父表匹配的列。 此外，因为从父表选择也会从其子表选择，所以除非它也对那些子表标记为有效，否则不能在父表上标记约束为有效。在所有这些情况下，`ALTER TABLE ONLY` 将被拒绝。
