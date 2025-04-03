@@ -40,7 +40,7 @@ CALL <name> ( [ <argument> ] [, ...] )
 使用注意事项
 --------
 
-要调用函数，而非存储过程，请使用 [SELECT](select.md)。
+要调用函数，而非存储过程，请使用 [SELECT](/maxir/Reference_Manual/sql-commands/select.md)。
 
 如果在事务块中调用 `CALL`，那么被调用的存储过程不能运行事务控制语句。只有在 `CALL` 在其自己的事务中被调用时，才允许使用事务控制语句。
 
