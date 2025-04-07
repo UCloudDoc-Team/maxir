@@ -52,7 +52,7 @@
     * [Hybrid DPS 函数参考](/maxir/Reference_Manual/hybrid-dps-functions/overview)
       * [内置函数和运算符](/maxir/Reference_Manual/hybrid-dps-functions/builtin-functions)
       * [窗口函数](/maxir/Reference_Manual/hybrid-dps-functions/window-functions)
-    * [Extreme DPS 函数参考手册](/maxir/Reference_Manual/extreme-dps-functions/index.mdx)
+    * [Extreme DPS 函数参考](/maxir/Reference_Manual/extreme-dps-functions/overview)
       * [逻辑运算符](/maxir/Reference_Manual/extreme-dps-functions/logical-operators)
       * [比较函数和运算符](/maxir/Reference_Manual/extreme-dps-functions/comparison-functions)
       * [数学函数和运算符](/maxir/Reference_Manual/extreme-dps-functions/mathematical-functions)
