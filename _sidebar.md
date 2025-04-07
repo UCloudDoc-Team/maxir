@@ -50,10 +50,10 @@
       * [布尔类型](/maxir/Reference_Manual/data-types/boolean)
       * [数组](/maxir/Reference_Manual/data-types/arrays)
       * [二进制类型](/maxir/Reference_Manual/data-types/binary)
-   * [Hybrid DPS 函数参考](/maxir/Reference_Manual/hybrid-dps-functions/overview)
+    * [Hybrid DPS 函数参考](/maxir/Reference_Manual/hybrid-dps-functions/overview)
       * [内置函数和运算符](/maxir/Reference_Manual/hybrid-dps-functions/builtin-functions)
       * [窗口函数](/maxir/Reference_Manual/hybrid-dps-functions/window-functions)
-   * [Extreme DPS 函数参考手册](/maxir/Reference_Manual/extreme-dps-functions/index.mdx)
+    * [Extreme DPS 函数参考手册](/maxir/Reference_Manual/extreme-dps-functions/index.mdx)
       * [逻辑运算符](/maxir/Reference_Manual/extreme-dps-functions/logical-operators)
       * [比较函数和运算符](/maxir/Reference_Manual/extreme-dps-functions/comparison-functions)
       * [数学函数和运算符](/maxir/Reference_Manual/extreme-dps-functions/mathematical-functions)
@@ -82,8 +82,4 @@
       * [COMMENT](/maxir/Reference_Manual/sql-commands/comment)
       * [COMMIT](/maxir/Reference_Manual/sql-commands/commit)
       * [COPY](/maxir/Reference_Manual/sql-commands/copy)
-      
-      
-      
-      
       
