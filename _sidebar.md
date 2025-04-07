@@ -44,17 +44,20 @@
     * [MAXIR 向量版](/maxir/practices/vector)
 
 * 参考手册
-    * [数据类型](/maxir/Reference_Manual/data-types/overview)
+    * 数据类型
+        * [概述](/maxir/Reference_Manual/data-types/numeric)
         * [数值类型](/maxir/Reference_Manual/data-types/numeric)
         * [字符类型](/maxir/Reference_Manual/data-types/character)
         * [日期/时间类型](/maxir/Reference_Manual/data-types/datetime)
         * [布尔类型](/maxir/Reference_Manual/data-types/boolean)
         * [数组](/maxir/Reference_Manual/data-types/arrays)
         * [二进制类型](/maxir/Reference_Manual/data-types/binary)
-    * [Hybrid DPS 函数参考](/maxir/Reference_Manual/hybrid-dps-functions/overview)
+    * Hybrid DPS 函数参考
+        * [概述](/maxir/Reference_Manual/data-types/numeric)
         * [内置函数和运算符](/maxir/Reference_Manual/hybrid-dps-functions/builtin-functions)
         * [窗口函数](/maxir/Reference_Manual/hybrid-dps-functions/window-functions)
-    * [Extreme DPS 函数参考](/maxir/Reference_Manual/extreme-dps-functions/overview)
+    * Extreme DPS 函数参考
+        * [概述](/maxir/Reference_Manual/extreme-dps-functions/overview)
         * [逻辑运算符](/maxir/Reference_Manual/extreme-dps-functions/logical-operators)
         * [比较函数和运算符](/maxir/Reference_Manual/extreme-dps-functions/comparison-functions)
         * [数学函数和运算符](/maxir/Reference_Manual/extreme-dps-functions/mathematical-functions)
