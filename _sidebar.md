@@ -42,6 +42,7 @@
         * [对象权限](/maxir/guide-vector/object-privileges)    
 * 最佳实践
     * [MAXIR 向量版](/maxir/practices/vector)
+
 * 参考手册
     * [数据类型](/maxir/Reference_Manual/data-types/overview)
         * [数值类型](/maxir/Reference_Manual/data-types/numeric)
