@@ -45,7 +45,7 @@
 
 * 参考手册
     * 数据类型
-        * [概述](/maxir/Reference_Manual/data-types/numeric)
+        * [概述](/maxir/Reference_Manual/data-types/overview)
         * [数值类型](/maxir/Reference_Manual/data-types/numeric)
         * [字符类型](/maxir/Reference_Manual/data-types/character)
         * [日期/时间类型](/maxir/Reference_Manual/data-types/datetime)
@@ -53,7 +53,7 @@
         * [数组](/maxir/Reference_Manual/data-types/arrays)
         * [二进制类型](/maxir/Reference_Manual/data-types/binary)
     * Hybrid DPS 函数参考
-        * [概述](/maxir/Reference_Manual/data-types/numeric)
+        * [概述](/maxir/Reference_Manual/hybrid-dps-functions/overview)
         * [内置函数和运算符](/maxir/Reference_Manual/hybrid-dps-functions/builtin-functions)
         * [窗口函数](/maxir/Reference_Manual/hybrid-dps-functions/window-functions)
     * Extreme DPS 函数参考
