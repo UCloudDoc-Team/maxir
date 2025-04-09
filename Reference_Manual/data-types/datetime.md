@@ -24,7 +24,7 @@ MAXIR 支持主要的日期和时间数据类型，如下表所示。
 
 - 如计算引擎为 Hybrid DPS，请参考 PostgreSQL 文档中的 [Date/Time Functions and Operators](https://www.postgresql.org/docs/12/functions-datetime.html)。
 
-- 如计算引擎为 Extreme DPS，请参考 [日期/时间函数和运算符](i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/extreme-dps-functions/date-time-functions.md)。
+- 如计算引擎为 Extreme DPS，请参考 [日期/时间函数和运算符](/maxir/Reference_Manual/extreme-dps-functions/date-time-functions.md)。
 
 日期/时间类型的输出样式因使用的客户端而异，本文不做展开。
 
