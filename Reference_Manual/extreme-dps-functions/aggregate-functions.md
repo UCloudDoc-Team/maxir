@@ -348,7 +348,7 @@ COUNT( "any"  )
    指定返回输入值非空的输入行的数量。
 
 
-关于 MAXIR 支持的数值类型，请参考 [数值类型](i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/data-types/numeric.md)。
+关于 MAXIR 支持的数值类型，请参考 [数值类型](/maxir/Reference_Manual/data-types/numeric.md)。
 
 
  
