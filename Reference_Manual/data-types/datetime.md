@@ -28,7 +28,7 @@ MAXIR 不支持在 DDL 中定义数据类型为 `interval` 的列，因为 MAXIR
 
 日期/时间类型的输出样式因使用的客户端而异，本文不做展开。
 
->note 说明
+>说明
 >- `timestamptz` 可以作为 `timestamp with time zone` 的缩写使用。
 >- 日期按照公历来计算，即使是引入公历之前的年份。更多详细信息，请参考 PostgreSQL 文档中的 [History of Units](https://www.postgresql.org/docs/current/datetime-units-history.html)。
 
