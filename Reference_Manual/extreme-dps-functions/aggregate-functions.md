@@ -609,8 +609,8 @@ PERCENTILE_CONT(<fraction>) WITHIN GROUP (ORDER BY <sort_expression>)
 
 `PERCENTILE_DISC` 是一个假定离散分布模型的逆分布函数。该函数接受一个百分比值和由 `ORDER BY` 子句指定的排序表达式，并返回带有大于或等于指定百分比的最小累积分布值。
 
->note
->不同于 [PERCENTILE_CONT](#percentile_cont) 可以返回不存在的值，如果指定百分位的值不存在，`PERCENTILE_DISC` 会返回在排序后第一个大于指定百分位的值。
+?>注意 <br/>
+不同于 [PERCENTILE_CONT](#percentile_cont) 可以返回不存在的值，如果指定百分位的值不存在，`PERCENTILE_DISC` 会返回在排序后第一个大于指定百分位的值。
 
 
  
