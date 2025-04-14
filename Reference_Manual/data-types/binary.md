@@ -32,8 +32,8 @@ USING pg_zdb
 DISTRIBUTED BY (col1);
 ```
 
->warning
->请勿直接使用 `bytea` 类型字段作为 `DISTRIBUTED BY` 的分布键，因为 `bytea` 字段通常较长，可能导致哈希计算效率低下，从而影响写入性能。
+!>注意 <br/>
+请勿直接使用 `bytea` 类型字段作为 `DISTRIBUTED BY` 的分布键，因为 `bytea` 字段通常较长，可能导致哈希计算效率低下，从而影响写入性能。
 
 
 ### 写入数据
