@@ -14,7 +14,7 @@
 
 连接一个或多个字符串。
 
->info
+>说明 <br/>
 >Null 值会被忽略。
 
 #### 语法
@@ -70,7 +70,7 @@ SELECT BIT_LENGTH('Extreme DPS');
 
 返回字符串的字符数量。
 
->info 说明
+>说明 <br/>
 >`CHARACTER_LENGTH` 是 `CHAR_LENGTH` 的别名。
 
 #### 语法
