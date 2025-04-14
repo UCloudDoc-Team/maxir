@@ -39,6 +39,6 @@
 
 
 !>使用限制 Extreme DPS 对比较谓词的输入类型有一些限制：
-- `BETWEEN`、`NOT BETWEEN`、`IS NULL` 和 `IS NOT NULL` 的输入类型不能为 `interval`。
-- `IS DISTINCT FROM` 和 `IS NOT DISTINCT FROM` 的输入类型不能为 `interval`。
+!>- `BETWEEN`、`NOT BETWEEN`、`IS NULL` 和 `IS NOT NULL` 的输入类型不能为 `interval`。
+!>- `IS DISTINCT FROM` 和 `IS NOT DISTINCT FROM` 的输入类型不能为 `interval`。
  
