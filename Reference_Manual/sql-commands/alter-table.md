@@ -164,8 +164,8 @@ MAXIR 提供了在单个 `ALTER TABLE` 中指定多个更改的选项，以便�
 
 此表列出了在对指定类型的表存储定义的表上执行时需要表重写的 `ALTER TABLE` 操作。
 
->caution
->执行表重写的 `ALTER TABLE` 形式不是 MVCC 安全的。在表重写之后，如果它们使用的是重写发生之前的快照，那么并发事务将看到的表是空的。更多详情，请参考 [MVCC Caveats](https://www.postgresql.org/docs/12/mvcc-caveats.html)。
+!>注意 <br/>
+执行表重写的 `ALTER TABLE` 形式不是 MVCC 安全的。在表重写之后，如果它们使用的是重写发生之前的快照，那么并发事务将看到的表是空的。更多详情，请参考 [MVCC Caveats](https://www.postgresql.org/docs/12/mvcc-caveats.html)。
 
 
 
