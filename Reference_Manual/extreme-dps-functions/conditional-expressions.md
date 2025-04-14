@@ -3,7 +3,7 @@
 
 Extreme DPS 中提供了几种符合 SQL 的条件表达式，即 `CASE WHEN`、`COALESCE`、`NULLIF`，以及 `GREATEST` 和 `LEAST`。
 
->info 说明
+>说明
 >- Extreme DPS 不支持在条件表达式中使用 `interval`。
 >- 即使语法与函数类似，`COALESCE`、`GREATEST` 和 `LEAST` 不能与明确的 `VARIADIC` 数组参数一起使用。
 
