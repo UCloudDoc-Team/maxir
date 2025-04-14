@@ -22,7 +22,7 @@ ABORT
 `ABORT` 回滚当前事务并不会保存当前事务所做的任何更新，与 [ROLLBACK](/maxir/Reference_Manual/sql-commands/rollback.md) 效果相同。
 
 
->note
+>说明 <br/>
 >`ABORT` 只是出于历史原因才出现的。
 
 ---
