@@ -12,8 +12,8 @@ MAXIR 支持主要的日期和时间数据类型，如下表所示。
 
 <br/>
 
->warning 重要
->MAXIR 不支持在 DDL 中定义数据类型为 `interval` 的列，因为 MAXIR 不支持存储 `interval` 类型的数据。
+!>重要 <br/>
+MAXIR 不支持在 DDL 中定义数据类型为 `interval` 的列，因为 MAXIR 不支持存储 `interval` 类型的数据。
 
 
 
@@ -55,8 +55,8 @@ MAXIR 支持两种时间戳类型：`timestamp with time zone` 和 `timestamp`�
 如果你在 `timestamp with time zone` 类型和 `timestamp` 类型之间转换值，`timestamp` 值通常被视为时区的本地时间。 
 
 
->warning 重要
->MAXIR 不允许使用大写字母 `T` 来连接值中的日期部分和时间部分，请使用空格代替。
+!>重要 <br/>
+MAXIR 不允许使用大写字母 `T` 来连接值中的日期部分和时间部分，请使用空格代替。
 
 <br/>
 
