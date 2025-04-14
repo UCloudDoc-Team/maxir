@@ -45,8 +45,8 @@ ALTER PROCEDURE <name> [ ( [ [<arg_mode>] [<arg_name>] <arg_type> [, ...] ] ) ]
 要更改存储过程的所有者，你必须新的所有角色的直接或间接成员，并对存储过程的 Schema 有 `CREATE` 权限。
 
 
->note
->MAXIR 对使用 `STABLE` 和 `VOLATILE` 函数有限制，详情请见 [CREATE FUNCTION](/maxir/Reference_Manual/sql-commands/create-function.md)。
+?>注意 <br/>
+MAXIR 对使用 `STABLE` 和 `VOLATILE` 函数有限制，详情请见 [CREATE FUNCTION](/maxir/Reference_Manual/sql-commands/create-function.md)。
 
 
 ---
