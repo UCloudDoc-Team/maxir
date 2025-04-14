@@ -53,7 +53,7 @@ FROM orders;
 
 判断是否所有非 null 输入值都为真。如是，则返回为真，如否，则返回为假。
 
->info
+>说明 <br/>
 >`BOOL_EVERY` 为 `BOOL_AND` 的别名，二者行为完全一致。
 
 
@@ -196,7 +196,7 @@ BOOL_OR(<expression>)
 
 返回非空输入值的总和。
 
->info
+>说明 <br/>
 >`SUM` 会自动忽略空值。但是如果所有记录都是空值，将返回 null。
 
 
@@ -260,7 +260,7 @@ SELECT SUM(price * (1 + tax_rate)) FROM orders;
 
 返回指定记录中的最小值或最大值。
 
->info
+>说明 <br/>
 >`MIN` 或 `MAX` 会自动忽略空值。如果所有记录都是空值，将返回 null。
 
 
@@ -377,7 +377,7 @@ SELECT COUNT("any") FROM orders;
 
 返回非 null 值的平均值。
 
->info
+>说明 <br/>
 >`AVG` 会自动忽略空值。如果所有值都是空值，将返回 null。
 
 
@@ -440,7 +440,7 @@ SELECT AVG(price * quantity) FROM orders;
 - 支持指定 *`<weight>`*，表示 *`<expression>`* 中的每一个值的权重。其实际上指定了每一个值在百分位数集合中的复制次数，从而影响每一项在近似百分位数计算中的贡献度。例如，列 `c` 有 `n` 个数字，指定权重为 5，则该列中的每个数字在百分位数计算中将被视为出现了 5 次。
 
 
->info
+>说明 <br/>
 >`PERCENTILE_APPROX` 为 `APPROX_PERCENTILE` 的别名，二者行为完全一致。
 
 
@@ -536,7 +536,7 @@ APPROX_PERCENTILE (<expression>[, <weight>], <percentages>  [,  <accuracy>])
 
 根据输入列（在 *`<sort_expression>`* 中指定）的连续分布返回一个百分位数值。如果没有输入行恰好位于期望的百分位上，则结果通过对两个最近输入值进行线性插值计算得出。在计算中忽略 null 值。
 
->info
+>说明 <br/>
 >`PERCENTILE_CONT` 工作步骤如下：
 >1. 根据 *`<sort_expression>`* 对数据集中的值按升序排序。
 >2. 根据所需百分比计算出一个位置。如对应位置存在值，则返回个该值。如不存在，则执行步骤 3。
