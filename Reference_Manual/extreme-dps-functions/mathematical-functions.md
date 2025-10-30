@@ -24,7 +24,7 @@
 
 ## 数学函数
 
-下表列出了 Extreme DPS 支持的数学函数。部分函数根据参数类型的不同而有所差异，因此提供了多种形式。下表中的 `numeric` 表示 Extreme DPS 支持的任何 [数值类型](i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/data-types/numeric.md)，即 `bigint`、`integer`、`smallint`、`double precision`、`real` 和 `decimal`。
+下表列出了 Extreme DPS 支持的数学函数。部分函数根据参数类型的不同而有所差异，因此提供了多种形式。下表中的 `numeric` 表示 Extreme DPS 支持的任何 [数值类型](/maxir/Reference_Manual/data-types/numeric.md)，即 `bigint`、`integer`、`smallint`、`double precision`、`real` 和 `decimal`。
 
 | 函数 | 返回类型 | 描述 | 示例 | 结果 |
 | :- | :- | :- | :- | :- |
