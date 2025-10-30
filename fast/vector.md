@@ -538,8 +538,8 @@ Vector DPS 提供如下针对搜索模式的搜索选项：
 
 | 键 | 类型 | 取值范围 | 默认值 | 说明 |
 | :- | :- | :- | :- | :- |
-| `vectors.search_mode` | `enum` | `"basic"`, `"vbase"` | `"vbase"` | 搜索模式。 <br/>更多信息，请参考 [向量搜索](#向量搜索)。 |
-| `vectors.pgvector_compatibility` | `boolean` |   | `off` | 是否开启兼容。 <br/>更多信息，请参考 [与-pgvector-的兼容性](#与-pgvector-的兼容性)。 |
+| `vectors.search_mode` | `enum` | `"basic"`, `"vbase"` | `"vbase"` | 搜索模式。 <br/>更多信息，请参考 [向量搜索](#_5向量搜索)。 |
+| `vectors.pgvector_compatibility` | `boolean` |   | `off` | 是否开启兼容。 <br/>更多信息，请参考 [与-pgvector-的兼容性](#_8与-pgvector-的兼容性)。 |
 | `vectors.enable_index` | `boolean` |   | `on` | 是否生产索引查询的执行计划。 |
 
 <br/>
