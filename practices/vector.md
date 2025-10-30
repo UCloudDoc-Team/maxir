@@ -475,7 +475,7 @@ b6b07b6d-7f6c-4ffc-b2c5-f753cefc2e90,"-0.28571999073028564,1.6030000448226929,-0
 
 2. 本代码基于 hdfs，需要先将数据文件（file.csv） put 到 hdfs，可按需修改脚本中数据文件路径。
 
-3. 需要下载postgresql-42.3.3.jar包：[postgresql-42.3.3.jar](https://repo1.maven.org/maven2/org/postgresql/postgresql/42.3.3/postgresql-42.3.3.jar)，下载地址为：[https://repo1.maven.org/maven2/org/postgresql/postgresql/42.3.3/postgresql-42.3.3.jar](https://repo1.maven.org/maven2/org/postgresql/postgresql/42.3.3/postgresql-42.3.3.jar%E3%80%82)。
+3. 需要下载postgresql-42.3.3.jar包：[postgresql-42.3.3.jar](https://repo1.maven.org/maven2/org/postgresql/postgresql/42.3.3/postgresql-42.3.3.jar)，下载地址为：[https://repo1.maven.org/maven2/org/postgresql/postgresql/42.3.3/postgresql-42.3.3.jar](https://repo1.maven.org/maven2/org/postgresql/postgresql/42.3.3/postgresql-42.3.3.jar)
 
 #### 通过pyspark插入数据
 
