@@ -294,7 +294,7 @@ MAKE_TIMESTAMPTZ(<year>, <month>, <day>, <hour>, <min>, <sec>[, <timezone>])
 
 - *`<timezone>`*
 
-    指定有效时区的字符串表达式。值可以是从 UTC 的数字偏移量或者完整的时区名称来指定位置。更多说明，请参考 [日期/时间类型](i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/data-types/datetime.md#时区) 中关于“时区”的说明。
+    指定有效时区的字符串表达式。值可以是从 UTC 的数字偏移量或者完整的时区名称来指定位置。更多说明，请参考 [日期/时间类型](/maxir/Reference_Manual/data-types/datetime.md#时区) 中关于“时区”的说明。
 
    如果未指定 *`<timezone>`*，将使用当前时区。
 
@@ -446,7 +446,7 @@ DATE_TRUNC(<unit>, interval <interval>[, timezone])
 
 - *`<timezone>`*
 
-    字符串表达式，指定一个有效的时区。值可以是 UTC 的数字偏移量，或者是指定位置的完整时区名称。更多说明，请参考 [日期/时间类型](i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/data-types/datetime.md#时区) 中关于“时区”的说明。
+    字符串表达式，指定一个有效的时区。值可以是 UTC 的数字偏移量，或者是指定位置的完整时区名称。更多说明，请参考 [日期/时间类型](/maxir/Reference_Manual/data-types/datetime.md#时区) 中关于“时区”的说明。
 
     如果未指定 *`<timezone>`*，将使用当前时区。
 
@@ -557,7 +557,7 @@ EXTRACT(<field> from interval <interval>)
 
 - *`<timezone>`*
 
-    指定时区的字符串表达式。值可以是 UTC 的数字偏移量，或者是指定位置的完整时区名称。更多说明，请参考 [日期/时间类型](i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/data-types/datetime.md#时区) 中关于“时区”的说明。
+    指定时区的字符串表达式。值可以是 UTC 的数字偏移量，或者是指定位置的完整时区名称。更多说明，请参考 [日期/时间类型](/maxir/Reference_Manual/data-types/datetime.md#时区) 中关于“时区”的说明。
 
     如果未指定 *`<timezone>`*，将使用当前时区。
 
@@ -660,7 +660,7 @@ TIMESTAMP <timestamp> AT TIME ZONE <zone>
 
     要转换到的目标时区。
 
-    注意，*`<zone>`* 的值必须是时区的完整拼写，如 `Asia/Shanghai`。不支持如 `CST` 这样的缩写。你也可以指定严格遵循 "(+/-)hh:ss" 格式的偏移量。更多说明，请参考 [日期/时间类型](i18n/zh-Hans/docusaurus-plugin-content-docs/current/reference/data-types/datetime.md#时区) 中关于“时区”的说明。
+    注意，*`<zone>`* 的值必须是时区的完整拼写，如 `Asia/Shanghai`。不支持如 `CST` 这样的缩写。你也可以指定严格遵循 "(+/-)hh:ss" 格式的偏移量。更多说明，请参考 [日期/时间类型](/maxir/Reference_Manual/data-types/datetime.md#时区) 中关于“时区”的说明。
 
 ### 返回
 
