@@ -4,7 +4,7 @@ MAXIR 提供了多种访问集群的方式，以满足不同的用户需求。�
 ## 内网访问
 ### 方式一：通过 postgres client psql 访问
 
-在与MAXIR处于同一VPC下的云主机上，安装postgres client psql 版本。建议最佳为12版本。用户名操作请参考 [用户管理](/maxir/guides/dw-users/manage-dwusers) ，首次登录时${maxir_database}使用postgres
+在与MAXIR处于同一VPC下的云主机上，安装postgres client psql 版本。建议最佳为12版本。用户名操作请参考 [用户管理](/maxir/guides/dw-users/manage-dwusers) ，首次登录时${maxir_database}使用 postgres。
 
 ```plain 
 psql -h {maxir地址} -p {端口} -U {maxir控制台创建的用户名} -d ${maxir_database} 
