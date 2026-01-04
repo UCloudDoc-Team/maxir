@@ -86,6 +86,8 @@
         * [COMMENT](/maxir/Reference_Manual/sql-commands/comment)
         * [COMMIT](/maxir/Reference_Manual/sql-commands/commit)
         * [COPY](/maxir/Reference_Manual/sql-commands/copy)
+
+
           
       
 
